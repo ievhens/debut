@@ -1,5 +1,8 @@
 
-<div style="width: 300px;height: 300px;border: 1px solid red"></div>
+<div style="width: 300px;height: 300px;border: 1px solid red
+{% if section.settings.options.value == right %}
+  float: right;
+{% endif %}"></div>
 
 
 {% schema %}
