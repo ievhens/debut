@@ -1,5 +1,5 @@
 
-<div style="width: 300px;height: 300px;border: 1px solid red; margin-left:{{ section.settings.options.value }}em"></div>
+<div style="width: 300px;height: 300px;border: 1px solid red; margin-left:{{ section.settings.margin }}em"></div>
 
 
 {% schema %}
@@ -7,17 +7,17 @@
   "name": "Text Box",
   "settings": [
     {
-      "id": "align",
+      "id": "margin",
       "type": "select",
-      "label": "align",
+      "label": "Margin left",
       "options": [
         {
           "value": "3",
-          "label": "Left"
+          "label": "Less"
         },
         {
           "value": "6",
-          "label": "Right"
+          "label": "More"
         }
       ],
       "default": "3"
