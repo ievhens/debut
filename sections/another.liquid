@@ -1,24 +1,30 @@
-<section style="width: 300px; height: 300px; border: 1px solid red"></section>
+
+<div class="custom-text-section">
+  <h2> {{ section.settings.custom_text_title }} </h2>
+  <div>{{ section.settings.custom_text_body }}</div>
+</div>
 
 {% schema %}
 {
-  "name": "another",
+  "name": "Text Box",
   "settings": [
     {
+      "id": "custom_text_title",
       "type": "text",
-      "content": "another text",
-      "default": "another default"
+      "label": "Text box heading",
+      "default": "Title"
     },
     {
-      "id": "another",
-      "type": "text",
-      "label": "another label"
+      "id": "custom_text_body",
+      "type": "richtext",
+      "label": "Add custom text below",
+      "default": "<p>Add your text here</p>"
     }
   ],
   "presets": [
     {
-      "name": "another preset name",
-      "category": "another category"
+      "name": "custom-text",
+      "category": "Custom"
     }
   ]
 }
