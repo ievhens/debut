@@ -1,0 +1,1861 @@
+/* Slider */
+
+.cpu-slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cpu-slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cpu-slick-list:focus {
+  outline: none;
+}
+
+.cpu-slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.cpu-slick-slider .cpu-slick-track,
+.cpu-slick-slider .cpu-slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.cpu-slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: 0;
+  //margin-right: auto;
+}
+
+.cpu-slick-track:before,
+.cpu-slick-track:after {
+  display: table;
+  content: '';
+}
+
+.cpu-slick-track:after {
+  clear: both;
+}
+
+.cpu-slick-loading .cpu-slick-track {
+  visibility: hidden;
+}
+
+.cpu-slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .cpu-slick-slide {
+  float: right;
+}
+
+.cpu-slick-slide img {
+  display: block;
+}
+
+.cpu-slick-slide.cpu-slick-loading img {
+  display: none !important;
+}
+
+.cpu-slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.cpu-slick-initialized .cpu-slick-slide {
+  display: block;
+}
+
+.cpu-slick-loading .cpu-slick-slide {
+  visibility: hidden;
+}
+
+.cpu-slick-vertical .cpu-slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.cpu-slick-arrow.cpu-slick-hidden {
+  display: none;
+}
+
+/* Arrows */
+.cpu-slick-prev,
+.cpu-slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.cpu-slick-prev:hover,
+.cpu-slick-prev:focus,
+.cpu-slick-next:hover,
+.cpu-slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.cpu-slick-prev:hover:before,
+.cpu-slick-prev:focus:before,
+.cpu-slick-next:hover:before,
+.cpu-slick-next:focus:before {
+  opacity: 1;
+}
+
+.cpu-slick-prev.cpu-slick-disabled:before,
+.cpu-slick-next.cpu-slick-disabled:before {
+  opacity: .25;
+}
+
+.cpu-slick-prev:before,
+.cpu-slick-next:before {
+  // font-family:'slick';
+  font-size: 30px;
+  line-height: 0;
+  opacity: .75;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cpu-slick-prev {
+  left: -18px;
+}
+
+[dir='rtl'] .cpu-slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+.cpu-slick-prev:before {
+  content: '\2039';
+}
+
+[dir='rtl'] .cpu-slick-prev:before {
+  content: '\203A';
+}
+
+.cpu-slick-next {
+  right: -18px;
+}
+
+[dir='rtl'] .cpu-slick-next {
+  right: auto;
+  left: -25px;
+}
+
+.cpu-slick-next:before {
+  content: '\203A';
+}
+
+[dir='rtl'] .cpu-slick-next:before {
+  content: '\2039';
+}
+
+/* Dots */
+.cpu-slick-dotted.cpu-slick-slider {
+  /*margin-bottom: 20px;*/
+}
+
+.cpu-slick-dots {
+  position: static;
+  /*bottom: -40px;*/
+  display: inline-block;
+  /*width: 100%;*/
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.cpu-slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cpu-slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.cpu-slick-dots li button:hover,
+.cpu-slick-dots li button:focus {
+  outline: none;
+}
+
+.cpu-slick-dots li button:hover:before,
+.cpu-slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.cpu-slick-dots li button:before {
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '\25CF';
+  text-align: center;
+  opacity: 1;
+  color: #e9e9e9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cpu-slick-dots li.cpu-slick-active button:before {
+  opacity: 1;
+  color: #51565b;
+}
+
+
+/* Image Upload Slider */
+.gwa-cpu-widget {
+  max-width: 100%;
+}
+
+.gwa-cpu-widget-subheader-block {
+  width: 66.66%;
+}
+
+.gwa-cpu-widget-button {
+  font-weight: 600;
+  line-height: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-style: solid;
+  margin: 0;
+}
+
+.gwa-cpu-widget-button-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 33.33%;
+}
+
+.gwa-cpu-slider {
+  margin: 0 auto;
+  position: relative;
+}
+
+.gwa-cpu-line {
+  width: 100%;
+  border-top: 1px solid;
+  margin-top: 20px;
+}
+
+.gwa-cpu-slide-wrapper {
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.gwa-cpu-slide {
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.gwa-cpu-slide:focus, .gwa-cpu-slide-wrapper:focus {
+  outline: none;
+}
+
+.gwa-cpu-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.gwa-clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* Lightbox */
+
+
+/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
+.gwa-cpu-lightbox {
+
+  /*
+      Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
+  */
+  /* pswp = photoswipe */
+
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+    z-index: 1500;
+    -webkit-text-size-adjust: 100%;
+    /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
+    -webkit-backface-visibility: hidden;
+    outline: none;
+
+
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: none;
+  }
+
+  /* style is added when JS option showHideOpacity is set to true */
+  .cpu-pswp--animate_opacity {
+    /* 0.001, because opacity:0 doesn't trigger Paint action, which causes lag at start of transition */
+    opacity: 0.001;
+    will-change: opacity;
+    /* for open/close transition */
+    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+  }
+
+  &.cpu-pswp--open {
+    display: block;
+  }
+
+  .cpu-pswp--zoom-allowed .cpu-pswp__img {
+    /* autoprefixer: off */
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+  }
+
+  .cpu-pswp--zoomed-in .cpu-pswp__img {
+    /* autoprefixer: off */
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+  }
+
+  .cpu-pswp--dragging .cpu-pswp__img {
+    /* autoprefixer: off */
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+  }
+
+  /*
+      Background is added as a separate element.
+      As animating opacity is much faster than animating rgba() background-color.
+  */
+  .cpu-pswp__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    will-change: opacity;
+  }
+
+  .cpu-pswp__scroll-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .cpu-pswp__container,
+  .cpu-pswp__zoom-wrap {
+    -ms-touch-action: none;
+    touch-action: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  /* Prevent selection and tap highlights */
+  .cpu-pswp__container,
+  .cpu-pswp__img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  .cpu-pswp__zoom-wrap {
+    position: absolute;
+    width: 100%;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    /* for open/close transition */
+    -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+  }
+
+  .cpu-pswp__bg {
+    will-change: opacity;
+    /* for open/close transition */
+    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+  }
+
+  .cpu-pswp--animated-in .cpu-pswp__bg,
+  .cpu-pswp--animated-in .cpu-pswp__zoom-wrap {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .cpu-pswp__container,
+  .cpu-pswp__zoom-wrap {
+    -webkit-backface-visibility: hidden;
+  }
+
+  .cpu-pswp__item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .cpu-pswp__img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  /*
+      stretched thumbnail or div placeholder element (see below)
+      style is added to avoid flickering in webkit/blink when layers overlap
+  */
+  .cpu-pswp__img--placeholder {
+    -webkit-backface-visibility: hidden;
+  }
+
+  /*
+      div element that matches size of large image
+      large image loads on top of it
+  */
+  .cpu-pswp__img--placeholder--blank {
+    background: #222;
+  }
+
+  .cpu-pswp--ie .cpu-pswp__img {
+    width: 100% !important;
+    height: auto !important;
+    left: 0;
+    top: 0;
+  }
+
+  /*
+      Error message appears when image is not loaded
+      (JS option errorMsg controls markup)
+  */
+  .cpu-pswp__error-msg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: -8px;
+    color: #CCC;
+  }
+
+  .cpu-pswp__error-msg a {
+    color: #CCC;
+    text-decoration: underline;
+  }
+
+}
+
+/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+/*
+
+	Contents:
+
+	1. Buttons
+	2. Share modal and links
+	3. Index indicator ("1 of X" counter)
+	4. Caption
+	5. Loading indicator
+	6. Additional styles (root element, top bar, idle state, hidden state, etc.)
+
+*/
+.gwa-cpu-lightbox {
+  /*
+      1. Buttons
+   */
+  /* <button> css reset */
+  .cpu-pswp__button {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    -webkit-appearance: none;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    opacity: 0.75;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .cpu-pswp__button:focus, .cpu-pswp__button:hover {
+    opacity: 1;
+    outline: none;
+  }
+  .cpu-pswp__button:active, .cpu-pswp__button:focus {
+    outline: none;
+    opacity: 0.9;
+  }
+  .cpu-pswp__button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+  /* pswp__ui--over-close class it added when mouse is over element that should close gallery */
+  .cpu-pswp__ui--over-close .cpu-pswp__button--close {
+    opacity: 1;
+  }
+
+  .cpu-pswp__button, .cpu-pswp__button--arrow--left:before, .cpu-pswp__button--arrow--right:before {
+    background: url("{{ 'gwa-cpu-default-skin.png' | asset_img_url: '264x', scale: 2 }}") 0 0 no-repeat;
+    background-size: 264px 88px;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.1), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
+    /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
+    &.cpu-pswp--svg .cpu-pswp__button,
+    &.cpu-pswp--svg .cpu-pswp__button--arrow--left:before,
+    &.cpu-pswp--svg .cpu-pswp__button--arrow--right:before {
+      background-image: url("{{ 'gwa-cpu-default-skin.png' | asset_img_url: '264x', scale: 2 }}");
+    }
+
+    &.cpu-pswp--svg .cpu-pswp__button--arrow--left,
+    &.cpu-pswp--svg .cpu-pswp__button--arrow--right {
+      background: none;
+    }
+  }
+
+  .cpu-pswp__button--close {
+    background-position: 0 -44px;
+  }
+
+  .cpu-pswp__button--share {
+    background-position: -44px -44px;
+  }
+
+  .cpu-pswp__button--fs {
+    display: none;
+  }
+
+  &.cpu-pswp--supports-fs .cpu-pswp__button--fs {
+    display: block;
+  }
+
+  &.cpu-pswp--fs .cpu-pswp__button--fs {
+    background-position: -44px 0;
+  }
+
+  .cpu-pswp__button--zoom {
+    display: none;
+    background-position: -88px 0;
+  }
+
+  &.cpu-pswp--zoom-allowed .cpu-pswp__button--zoom {
+    display: block;
+  }
+
+  &.cpu-pswp--zoomed-in .cpu-pswp__button--zoom {
+    background-position: -132px 0;
+  }
+
+  /* no arrows on touch screens */
+  &.cpu-pswp--touch .cpu-pswp__button--arrow--left,
+  &.cpu-pswp--touch .cpu-pswp__button--arrow--right {
+    visibility: hidden;
+  }
+
+  /*
+      Arrow buttons hit area
+      (icon is added to :before pseudo-element)
+  */
+  .cpu-pswp__button--arrow--left, .cpu-pswp__button--arrow--right {
+    background: none;
+    top: 50%;
+    margin-top: -50px;
+    width: 70px;
+    height: 100px;
+    position: absolute;
+  }
+
+  .cpu-pswp__button--arrow--left {
+    left: 0;
+  }
+
+  .cpu-pswp__button--arrow--right {
+    right: 0;
+  }
+
+  .cpu-pswp__button--arrow--left:before, .cpu-pswp__button--arrow--right:before {
+    content: '';
+    top: 35px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 30px;
+    width: 32px;
+    position: absolute;
+  }
+
+  .cpu-pswp__button--arrow--left:before {
+    left: 6px;
+    background-position: -138px -44px;
+  }
+
+  .cpu-pswp__button--arrow--right:before {
+    right: 6px;
+    background-position: -94px -44px;
+  }
+
+  /*
+
+      2. Share modal/popup and links
+
+   */
+  .cpu-pswp__counter, .cpu-pswp__share-modal {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .cpu-pswp__share-modal {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    z-index: 1600;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+    -webkit-backface-visibility: hidden;
+    will-change: opacity;
+  }
+
+  .cpu-pswp__share-modal--hidden {
+    display: none;
+  }
+
+  .cpu-pswp__share-tooltip {
+    z-index: 1620;
+    position: absolute;
+    background: #FFF;
+    top: 56px;
+    border-radius: 2px;
+    display: block;
+    width: auto;
+    right: 44px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+  }
+  .cpu-pswp__share-tooltip a {
+    display: block;
+    padding: 8px 12px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .cpu-pswp__share-tooltip a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  .cpu-pswp__share-tooltip a:first-child {
+    /* round corners on the first/last list item */
+    border-radius: 2px 2px 0 0;
+  }
+  .cpu-pswp__share-tooltip a:last-child {
+    border-radius: 0 0 2px 2px;
+  }
+
+  .cpu-pswp__share-modal--fade-in {
+    opacity: 1;
+  }
+  .cpu-pswp__share-modal--fade-in .cpu-pswp__share-tooltip {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* increase size of share links on touch devices */
+  &.cpu-pswp--touch .cpu-pswp__share-tooltip a {
+    padding: 16px 12px;
+  }
+
+  a.cpu-pswp__share--facebook:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-bottom-color: #FFF;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+  }
+  a.cpu-pswp__share--facebook:hover {
+    background: #3E5C9A;
+    color: #FFF;
+  }
+  a.cpu-pswp__share--facebook:hover:before {
+    border-bottom-color: #3E5C9A;
+  }
+
+  a.cpu-pswp__share--twitter:hover {
+    background: #55ACEE;
+    color: #FFF;
+  }
+
+  a.cpu-pswp__share--pinterest:hover {
+    background: #CCC;
+    color: #CE272D;
+  }
+
+  a.cpu-pswp__share--download:hover {
+    background: #DDD;
+  }
+
+  /*
+
+      3. Index indicator ("1 of X" counter)
+
+   */
+  .cpu-pswp__counter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    font-size: 13px;
+    line-height: 44px;
+    color: #FFF;
+    opacity: 0.75;
+    padding: 0 10px;
+  }
+
+  /*
+
+      4. Caption
+
+   */
+  .cpu-pswp__caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 44px;
+  }
+  .cpu-pswp__caption small {
+    font-size: 11px;
+    color: #BBB;
+  }
+
+  .cpu-pswp__caption__center {
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 20px;
+    color: #CCC;
+  }
+
+  .cpu-pswp__caption--empty {
+    display: none;
+  }
+
+  /* Fake caption element, used to calculate height of next/prev image */
+  .cpu-pswp__caption--fake {
+    visibility: hidden;
+  }
+
+  /*
+
+      5. Loading indicator (preloader)
+
+      You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
+
+   */
+  .cpu-pswp__preloader {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -22px;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+    will-change: opacity;
+  }
+
+  .cpu-pswp__preloader__icn {
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+  }
+
+  .cpu-pswp__preloader--active {
+    opacity: 1;
+  }
+  //.cpu-pswp__preloader--active .cpu-pswp__preloader__icn {
+  //  /* We use .gif in browsers that don't support CSS animation */
+  //  background: url("{{ 'gwa-cpu-preloader.gif' | asset_url }}") 0 0 no-repeat;
+  //}
+
+  &.cpu-pswp--css_animation .cpu-pswp__preloader--active {
+    opacity: 1;
+  }
+  &.cpu-pswp--css_animation .cpu-pswp__preloader--active .cpu-pswp__preloader__icn {
+    -webkit-animation: cpu-clockwise 500ms linear infinite;
+    animation: cpu-clockwise 500ms linear infinite;
+  }
+  &.cpu-pswp--css_animation .cpu-pswp__preloader--active .cpu-pswp__preloader__donut {
+    -webkit-animation: cpu-donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
+    animation: cpu-donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
+  }
+  &.cpu-pswp--css_animation .cpu-pswp__preloader__icn {
+    background: none;
+    opacity: 0.75;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    margin: 0;
+  }
+  &.cpu-pswp--css_animation .cpu-pswp__preloader__cut {
+    /*
+              The idea of animating inner circle is based on Polymer ("material") loading indicator
+               by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
+          */
+    position: relative;
+    width: 7px;
+    height: 14px;
+    overflow: hidden;
+  }
+  &.cpu-pswp--css_animation .cpu-pswp__preloader__donut {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cpu-pswp__preloader {
+      position: relative;
+      left: auto;
+      top: auto;
+      margin: 0;
+      float: right;
+    }
+  }
+
+  /*
+      6. Additional styles
+   */
+  /* root element of UI */
+  .cpu-pswp__ui {
+    -webkit-font-smoothing: auto;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1550;
+  }
+
+  /* top black bar with buttons and "1 of X" indicator */
+  .cpu-pswp__top-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%;
+  }
+
+  .cpu-pswp__caption, .cpu-pswp__top-bar, .cpu-pswp--has_mouse .cpu-pswp__button--arrow--left, .cpu-pswp--has_mouse .cpu-pswp__button--arrow--right {
+    -webkit-backface-visibility: hidden;
+    will-change: opacity;
+    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+  }
+
+  /* pswp--has_mouse class is added only when two subsequent mousemove events occur */
+  .cpu-pswp--has_mouse .cpu-pswp__button--arrow--left, .cpu-pswp--has_mouse .cpu-pswp__button--arrow--right {
+    visibility: visible;
+  }
+
+  .cpu-pswp__top-bar, .cpu-pswp__caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* pswp__ui--fit class is added when main image "fits" between top bar and bottom bar (caption) */
+  .cpu-pswp__ui--fit .cpu-pswp__top-bar, .cpu-pswp__ui--fit .cpu-pswp__caption {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* pswp__ui--idle class is added when mouse isn't moving for several seconds (JS option timeToIdle) */
+  .cpu-pswp__ui--idle .cpu-pswp__top-bar {
+    opacity: 0;
+  }
+  .cpu-pswp__ui--idle .cpu-pswp__button--arrow--left, .cpu-pswp__ui--idle .cpu-pswp__button--arrow--right {
+    opacity: 0;
+  }
+
+  /*
+      pswp__ui--hidden class is added when controls are hidden
+      e.g. when user taps to toggle visibility of controls
+  */
+  .cpu-pswp__ui--hidden .cpu-pswp__top-bar, .cpu-pswp__ui--hidden .cpu-pswp__caption, .cpu-pswp__ui--hidden .cpu-pswp__button--arrow--left, .cpu-pswp__ui--hidden .cpu-pswp__button--arrow--right {
+    /* Force paint & create composition layer for controls. */
+    opacity: 0.001;
+  }
+
+  /* pswp__ui--one-slide class is added when there is just one item in gallery */
+  .cpu-pswp__ui--one-slide .cpu-pswp__button--arrow--left, .cpu-pswp__ui--one-slide .cpu-pswp__button--arrow--right, .cpu-pswp__ui--one-slide .cpu-pswp__counter {
+    display: none;
+  }
+
+  .cpu-pswp__element--disabled {
+    display: none !important;
+  }
+
+  .cpu-pswp--minimal--dark .cpu-pswp__top-bar {
+    background: none;
+  }
+}
+@-webkit-keyframes cpu-clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cpu-clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cpu-donut-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+@keyframes cpu-donut-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+/* Upload Widget */
+
+/* Modal */
+
+.gwa-cpu-modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 999998;
+}
+
+.gwa-cpu-modal-container {
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+  @media screen and (max-width: 767px) {
+    height: auto;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.gwa-cpu-modal-close-wrapper {
+  text-align: right;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.gwa-cpu-modal-close {
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.gwa-cpu-modal-inner {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 46px 100px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  @media screen and (max-width: 960px) {
+    padding: 25px;
+  }
+}
+
+.gwa-cpu-widget-upload {
+  .gwa-cpu-upload-cancel svg > g {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .gwa-cpu-upload-cancel:hover svg > g {
+    stroke: #8e9094;
+  }
+
+  .gwa-cpu-upload-steps {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    pointer-events: none;
+  }
+
+  .gwa-cpu-upload-step {
+    flex-basis: 50%;
+    position: relative;
+    max-width: 114px;
+    &:after {
+      content: '';
+      display: block;
+      width: calc(100% - 40px);
+      position: absolute;
+      height: 1px;
+      background-color: #dfe3e8;
+      top: 12px;
+      left: calc(50% + 20px);
+      -webkit-transition: all 0.7s;
+      -moz-transition: all 0.7s;
+      -ms-transition: all 0.7s;
+      -o-transition: all 0.7s;
+      transition: all 0.7s;
+    }
+    &:nth-last-of-type(1):after {
+      content: none;
+    }
+  }
+
+  .gwa-cpu-step-number {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f9fafb;
+    color: #919eab;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px #dfe3e8;
+    position: relative;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 2px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+    }
+    &:after {
+      left: -2px;
+    }
+    &:before {
+      right: -2px;
+    }
+  }
+
+  .gwa-cpu-step-title {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #637381;
+    margin-top: 5px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+
+  $activeColor: #5c6ac4;
+  $initialColor: #DFE1E6;
+  $errorColor: #de3618;
+
+  @mixin activeStep {
+    .gwa-cpu-step-number {
+      color: white;
+      background-color: #3e4bb1;
+      box-shadow: 0 0 0 1px #3e4bb1;
+    }
+    .gwa-cpu-step-title {
+      color: #212b36;
+    }
+  }
+
+  @mixin collapsed {
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    overflow-y: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  @mixin expanded($maxHeight) {
+    max-height: $maxHeight;
+    opacity: 1;
+  }
+
+  .gwa-cpu-upload-step-1 {
+    @include activeStep;
+  }
+
+  .gwa-cpu-drop-zone {
+    color: #bbb;
+    margin: auto;
+    height: 160px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='10'></svg>");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: background-image 0.5s ease-in;
+    -moz-transition: background-image 0.5s ease-in;
+    -ms-transition: background-image 0.5s ease-in;
+    -o-transition: background-image 0.5s ease-in;
+    transition: background-image 0.5s ease-in;
+
+    svg, svg path, svg circle, svg polygon {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+
+  .gwa-cpu-drop-zone-content {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px dashed $activeColor;
+    background-color: transparent;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .gwa-cpu-icon-status, .gwa-cpu-text-status, .gwa-cpu-file-icons {
+    display: none;
+  }
+
+  .gwa-cpu-progress-bar-wrapper, .gwa-cpu-upload-info, .gwa-cpu-error, .gwa-cpu-form-wrapper, .gwa-cpu-thankUMessage, .gwa-cpu-input-error {
+    @include collapsed;
+  }
+
+  .gwa-cpu-file-icons {
+    margin-bottom: -24px;
+  }
+
+  .gwa-cpu-progress-bar-wrapper {
+    width: 100%;
+  }
+
+  .gwa-cpu-progress-bar {
+    width: 100%;
+    height: 5px;
+    background: white;
+    border-radius: 3px;
+    margin: 7px auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .gwa-cpu-action-title {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    line-height: 17px;
+    color: #373a3e;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .gwa-cpu-action-subtitle {
+    font: 14px/19px 'Lato', sans-serif;
+    color: #3f4247;
+    margin: 4px 0 0;
+  }
+
+  .gwa-cpu-action-link {
+    color: #007ace;
+    font: 14px/19px 'Lato', sans-serif;
+    margin: 4px 0 0;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  .gwa-cpu-action-link:hover{
+    color: rgb(19, 134, 236);
+  }
+
+  .gwa-cpu-upload-info {
+    font-size: 16px;
+    text-align: center;
+    color: #373a3e;
+    @media screen and (max-width: 960px) {
+      font-size: 12px;
+    }
+  }
+
+  .gwa-cpu-error {
+    font-size: 16px;
+    text-align: center;
+    color: $errorColor;
+    @media screen and (max-width: 960px) {
+      font-size: 12px;
+    }
+  }
+
+  .gwa-cpu-thankUMessage {
+    color: #373a3e;
+    text-align: left;
+  }
+
+  &[data-file-type="image/jpeg"] {
+    .gwa-cpu-icon-jpg {
+      fill: $activeColor;
+      fill-opacity: 1;
+      opacity: 1;
+    }
+  }
+
+  &[data-file-type="image/png"] {
+    .gwa-cpu-icon-png {
+      fill: $activeColor;
+      fill-opacity: 1;
+      opacity: 1;
+    }
+  }
+
+  &[data-file-type="image/gif"] {
+    .gwa-cpu-icon-gif {
+      fill: $activeColor;
+      fill-opacity: 1;
+      opacity: 1;
+    }
+
+    .gwa-cpu-path-stroked {
+      stroke: $activeColor;
+    }
+  }
+
+  &[data-stage="load_image"] {
+    .gwa-cpu-drop-zone-content {
+      border: 1px dashed rgba(200,200,200,1);
+      background-color: rgba(255,255,255,1);
+    }
+
+    .gwa-cpu-file-icons {
+      display: block;
+    }
+
+    .gwa-cpu-icon-initial {
+      display: block;
+    }
+
+    .gwa-cpu-text-initial {
+      display: block;
+    }
+
+    .gwa-cpu-upload-info {
+      @include expanded(100px);
+      padding-top: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      .gwa-cpu-upload-manually-mob {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .gwa-cpu-upload-manually-desktop {
+        display: none;
+      }
+
+      .gwa-cpu-text-initial {
+        .gwa-cpu-action-title, .gwa-cpu-action-subtitle {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &[data-stage="fill_form"] {
+    .gwa-cpu-text-form {
+      display: block;
+    }
+  }
+
+  &[data-stage="confirm"] {
+    .gwa-cpu-text-confirm {
+      display: block;
+    }
+  }
+
+  &[data-stage="uploading"] {
+    .gwa-cpu-icon-uploading {
+      display: block;
+      animation: gwa-cpu-blink 0.4s ease-in infinite alternate;
+    }
+
+    .gwa-cpu-text-uploading {
+      display: block;
+    }
+
+    .gwa-cpu-upload-status {
+      -webkit-justify-content: center !important;
+      -ms-justify-content: center !important;
+      justify-content: center !important;
+    }
+  }
+
+  &[data-stage="uploaded"] {
+    .gwa-cpu-progress-bar {
+      background: linear-gradient(90deg, #5c6ac4, #5c6ac4 100%, white 100%, white) !important;
+    }
+
+    .gwa-cpu-drop-zone-content {
+      background-color: rgba(255, 255, 255, 0.15) !important;
+    }
+
+    .gwa-cpu-thankUMessage {
+      max-height: 100px;
+      opacity: 1;
+      padding-top: 25px;
+    }
+
+    .gwa-cpu-icon-uploaded {
+      display: block;
+    }
+
+    .gwa-cpu-text-uploaded {
+      display: block;
+    }
+  }
+
+  &[data-stage="fill_form"], &[data-stage="confirm"], &[data-stage="uploading"], &[data-stage="uploaded"] {
+    .gwa-cpu-upload-status {
+      background-color: rgba(255, 255, 255, 0.85);
+      display: inline-block;
+      width: 152px;
+      border-radius: 4px;
+      height: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -webkit-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+      justify-content: flex-end;
+      padding: 10px 5px;
+    }
+
+    .gwa-cpu-upload-step-2 {
+      @include activeStep;
+    }
+
+    .gwa-cpu-upload-step-1:after {
+      background-color: #3e4bb1;
+    }
+  }
+
+  &[data-stage="fill_form"], &[data-stage="confirm"] {
+    .gwa-cpu-drop-zone-content {
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .gwa-cpu-form-wrapper {
+      max-height: 400px;
+      opacity: 1;
+    }
+
+    .gwa-cpu-icon-form {
+      display: block;
+    }
+  }
+
+  &[data-stage="confirm"], &[data-stage="uploading"], &[data-stage="uploaded"] {
+    .gwa-cpu-upload-step-3 {
+      @include activeStep;
+    }
+
+    .gwa-cpu-upload-step-2:after {
+      background-color: #3e4bb1;
+    }
+  }
+
+  &[data-stage="uploading"], &[data-stage="uploaded"] {
+    .gwa-cpu-progress-bar-wrapper {
+      max-height: 20px;
+      opacity: 1;
+    }
+  }
+
+  &[data-dragging="true"] {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      z-index: 999999;
+    }
+
+    .gwa-cpu-drop-zone-content {
+      border-color: $activeColor;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .gwa-cpu-icon-status:not(.gwa-cpu-icon-initial) {
+      display: none;
+    }
+
+    .gwa-cpu-icon-initial {
+      display: block;
+      fill: $activeColor;
+    }
+
+    .gwa-cpu-text-status:not(.gwa-cpu-text-drag){
+      display: none;
+    }
+
+    .gwa-cpu-text-drag {
+      display: block;
+      .gwa-cpu-action-title {
+        color: $activeColor;
+      }
+    }
+
+    &[data-stage="fill_form"], &[data-stage="confirm"] {
+      .gwa-cpu-upload-status {
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+      }
+    }
+
+    &[data-error="true"] {
+      .gwa-cpu-action-title {
+        color: $errorColor !important;
+      }
+    }
+  }
+
+  &[data-error="true"] {
+    .gwa-cpu-drop-zone-content {
+      border-color: $errorColor !important;
+      background-color: rgba(253, 172, 154, 0.1) !important;
+    }
+
+    .gwa-cpu-icon-status:not(.gwa-cpu-icon-error) {
+      display: none !important;
+    }
+
+    .gwa-cpu-icon-error {
+      display: block !important;
+    }
+
+    .gwa-cpu-error {
+      max-height: 100px;
+      opacity: 1;
+      padding-top: 30px;
+    }
+
+    .gwa-cpu-upload-info {
+      max-height: 0;
+      opacity: 0;
+      padding: 0;
+    }
+
+    .gwa-cpu-icon-type {
+      fill: $errorColor !important;
+      fill-opacity: 1;
+      opacity: 1 !important;
+      .gwa-cpu-path-stroked {
+        stroke: $errorColor !important;
+        fill: none !important;
+      }
+    }
+
+    &[data-stage="fill_form"], &[data-stage="confirm"] {
+      .gwa-cpu-drop-zone-content {
+        background-color: rgba(255, 255, 255, 0.85) !important;
+      }
+    }
+  }
+
+  /* Upload form */
+
+  .gwa-cpu-form-wrapper {
+    margin-top: 20px;
+  }
+
+  .gwa-cpu-form {
+    text-align: left;
+  }
+
+  .gwa-cpu-form-field {
+    margin-bottom: 5px;
+  }
+
+  .gwa-cpu-form-label {
+    margin: 0;
+    padding: 0;
+    > span {
+      vertical-align: middle;
+    }
+  }
+
+  .gwa-cpu-form-label-text {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #212b36;
+  }
+
+  .gwa-cpu-input {
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: solid 1px #c4cdd5;
+    transition: all 0.3s;
+    margin-top: 3px;
+    &:focus {
+      border-color: #007bff;
+    }
+  }
+
+  .gwa-cpu-form-checkbox-first {
+    margin-top: 15px;
+  }
+
+  .gwa-cpu-checkbox-custom {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: solid 1px #dee1e6;
+    background-image: linear-gradient(to bottom, #ffffff, #f9fafb);
+    transition: all 0.3s;
+    position: relative;
+    margin-right: 5px;
+    .gwa-cpu-checkmark {
+      opacity: 0;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      transition: all 0.3s;
+    }
+  }
+
+  .gwa-cpu-input-checkbox {
+    display: none;
+    &:checked ~ .gwa-cpu-checkbox-custom {
+      border-color: #5c6ac4;
+      .gwa-cpu-checkmark {
+        opacity: 1;
+      }
+    }
+  }
+
+  .gwa-cpu-input-error {
+    color: #bf0711;
+    font-size: 14px;
+    svg, .gwa-cpu-input-error-text {
+      vertical-align: middle;
+    }
+  }
+
+  .gwa-cpu-field-error {
+    .gwa-cpu-input {
+      border-color: #de3617;
+    }
+    .gwa-cpu-input-error {
+      padding-top: 3px;
+      max-height: 50px;
+      opacity: 1;
+    }
+  }
+
+  .gwa-cpu-field-valid {
+    .gwa-cpu-input {
+      border-color: #28a745;
+    }
+  }
+
+  .gwa-cpu-submit-container  {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .gwa-cpu-upload-submit.gwa-cpu-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+}
+
+@keyframes gwa-cpu-blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
