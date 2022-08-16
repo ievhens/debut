@@ -39,6 +39,7 @@
       },
       "hero": {
         "type": "hero",
+        "disabled": true,
         "settings": {
           "alignment": "center",
           "title": "Image with text overlay",
@@ -121,10 +122,43 @@
         "type": "delille-info",
         "settings": {
         }
+      },
+      "1660645429c889b84b": {
+        "type": "collection-list",
+        "blocks": {
+          "1660645429c889b84b-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1660645429c889b84b-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1660645429c889b84b-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1660645429c889b84b-0",
+          "1660645429c889b84b-1",
+          "1660645429c889b84b-2"
+        ],
+        "settings": {
+          "title": "Collection list",
+          "grid": 3
+        }
       }
     },
     "content_for_index": [
       "hero",
+      "1660645429c889b84b",
       "featured-collections",
       "feature-row",
       "slideshow",
