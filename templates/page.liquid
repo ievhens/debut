@@ -19,7 +19,7 @@
             <div>{{ all_products }}</div>
               <ul>
                 {% for product in collection.products %}
-                  {{ product.title }}
+                  <li>{{- product.title -}}</li>
                 {% endfor %}
               </ul>
           <div>
