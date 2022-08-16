@@ -9,21 +9,9 @@
         {{ page.content }}
           <div style="width: 200px; height: 200px; background-color: #e95e61; color: black;">
             <ul>
-              {% for collection in collections %}
-                <li>{{ collection.title }}</li>
-              {% endfor %}
             </ul>
             <div>{{ shop.products_count }}</div>
-          <div>
-          <div style="width: 200px; height: 200px; background-color: #e95e61; color: black;">
-            <div>{{ all_products }}</div>
-              <ul>
-                {% for product in all_products.products %}
-                  <li>{{ product.title }}</li>
-                {% endfor %}
-              </ul>
-          <div>
-            {{ routes.all_products_collection_url }}
+          </div>
       </div>
     </div>
   </div>
