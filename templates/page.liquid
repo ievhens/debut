@@ -25,9 +25,10 @@
           <div>
             {% comment %}{{ routes.all_products_collection_url }} {% endcomment %}
       </div>
+          
 King:
             <script>
-            console.log('king', {{collections['all'].products['samsung-galaxy-a13'] | json }})
+            console.log('king', {{ all_products['samsung-galaxy-a13'] | json }})
               </script>
             {% for collection in collections %}
                  {{ collection.title }}<br>
