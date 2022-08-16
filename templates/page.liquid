@@ -23,12 +23,14 @@
               {% endfor %}
             </ul>
           <div>
-            {% paginate collections.all.products by 1000 %}
-              {% for product in collections.all.products %}
-
-              {% endfor %}
-            {% endpaginate %}
-
+          <div style="width: 200px; height: 200px; background-color: #e95e61; color: black;">
+            <div>{{ all_products }}</div>
+              <ul>
+                {% for products in collections %}
+                <li>{{ product.title }}</li>
+                {% endfor %}
+              </ul>
+          <div>
       </div>
     </div>
   </div>
