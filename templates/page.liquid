@@ -19,10 +19,11 @@
             <div>{{ all_products }}</div>
               <ul>
                 {% for product in collection.products %}
-                  <li>{{- product.title -}}</li>
+                  <li>{{ product.title }}</li>
                 {% endfor %}
               </ul>
           <div>
+            {{ routes.all_products_collection_url }}
       </div>
     </div>
   </div>
