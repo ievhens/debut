@@ -115,7 +115,11 @@
       "another": {
         "type": "another",
         "settings": {
-          "margin": "6"
+        }
+      },
+      "166064210732ca6560": {
+        "type": "delille-info",
+        "settings": {
         }
       }
     },
@@ -123,7 +127,8 @@
       "hero",
       "featured-collections",
       "feature-row",
-      "slideshow"
+      "slideshow",
+      "166064210732ca6560"
     ]
   },
   "presets": {
