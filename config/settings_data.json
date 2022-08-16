@@ -86,10 +86,9 @@
       },
       "featured-collections": {
         "type": "collection",
-        "disabled": true,
         "settings": {
           "title": "Featured collection",
-          "collection": "frontpage",
+          "collection": "top",
           "grid": 3,
           "rows": 2,
           "show_vendor": false,
@@ -98,6 +97,7 @@
       },
       "feature-row": {
         "type": "feature-row",
+        "disabled": true,
         "settings": {
           "layout": "left",
           "title": "Image with text",
@@ -155,6 +155,18 @@
         "settings": {
           "title": "Collection list",
           "grid": 3
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "enable_payment_button": false,
+          "show_share_buttons": true
         }
       }
     },
