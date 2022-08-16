@@ -17,9 +17,9 @@
           <div>
           <div style="width: 200px; height: 200px; background-color: #e95e61; color: black;">
             <ul>
-                {% for product in all_products %}
-                  {{ product.title }}
-                {% endfor %}
+              {% for collection in collections %}
+                <li>{{ collection.title }}</li>
+              {% endfor %}
             </ul>
           <div>
       </div>
