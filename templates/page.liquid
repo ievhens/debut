@@ -15,6 +15,13 @@
             </ul>
             <div>{{ shop.products_count }}</div>
           <div>
+          <div style="width: 200px; height: 200px; background-color: #e95e61">
+            <ul>
+                {% for product in collections %}
+                  <li>{{ product.title }}</li>
+                {% endfor %}
+            </ul>
+          <div>
       </div>
     </div>
   </div>
