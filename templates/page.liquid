@@ -25,6 +25,10 @@
           <div>
             {{ routes.all_products_collection_url }}
       </div>
+
+            {% for collection in collections %}
+{{ collection.title }}<br>
+            {% endfor %}
     </div>
   </div>
 </div>
