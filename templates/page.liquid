@@ -7,6 +7,9 @@
 
       <div class="rte">
         {{ page.content }}
+        {% for product in collection.products %}
+          {{ product.title }}
+        {% endfor %}
       </div>
     </div>
   </div>
