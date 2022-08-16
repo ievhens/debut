@@ -52,6 +52,7 @@
       },
       "slideshow": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "slideshow-0": {
             "type": "image",
@@ -85,6 +86,7 @@
       },
       "featured-collections": {
         "type": "collection",
+        "disabled": true,
         "settings": {
           "title": "Featured collection",
           "collection": "frontpage",
