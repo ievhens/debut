@@ -19,10 +19,15 @@
             <div>{{ all_products }}</div>
             <ul>
               {% for product in all_products %}
-                <li>{{ product.price }}</li>
+                <li>{{ product.title }}</li>
               {% endfor %}
             </ul>
           <div>
+            {% paginate collections.all.products by 1000 %}
+              {% for product in collections.all.products %}
+
+              {% endfor %}
+            {% endpaginate %}
       </div>
     </div>
   </div>
