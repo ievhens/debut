@@ -30,13 +30,13 @@ King:
             console.log({{collections | json }})
               </script>
             {% for collection in collections %}
-            {{ collection.title }}<br>
-             <script>
-                 console.log({{collection | json }})
-             </script>
-            {% for product in collection.products %}
-                <i>{{ product.title }}</i><br>
-            {% endfor %}
+                 {{ collection.title }}<br>
+                  <script>
+                     console.log({{collection | json }})
+                  </script>
+                  {% for product in collection.products %}
+                      <i>{{ product.title }}</i><br>
+                  {% endfor %}
             {% endfor %}
     </div>
   </div>
