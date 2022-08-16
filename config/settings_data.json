@@ -129,19 +129,19 @@
           "1660645429c889b84b-0": {
             "type": "featured_collection",
             "settings": {
-              "collection": ""
+              "collection": "top"
             }
           },
           "1660645429c889b84b-1": {
             "type": "featured_collection",
             "settings": {
-              "collection": ""
+              "collection": "premium"
             }
           },
           "1660645429c889b84b-2": {
             "type": "featured_collection",
             "settings": {
-              "collection": ""
+              "collection": "m-series"
             }
           }
         },
