@@ -34,7 +34,7 @@
           "message_text": "Announce something here",
           "message_link": "",
           "color_bg": "#7796a8",
-          "color_text": "#fff"
+          "color_text": "#ffffff"
         }
       },
       "hero": {
@@ -112,11 +112,10 @@
           "show_payment_icons": false
         }
       },
-      "16605612490be1eff2": {
+      "another": {
         "type": "another",
         "settings": {
-          "custom_text_title": "Your Title",
-          "custom_text_body": "<p>Add your mega text here!<\/p>"
+          "margin": "6"
         }
       }
     },
@@ -124,8 +123,7 @@
       "hero",
       "featured-collections",
       "feature-row",
-      "slideshow",
-      "16605612490be1eff2"
+      "slideshow"
     ]
   },
   "presets": {
