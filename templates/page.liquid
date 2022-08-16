@@ -26,6 +26,9 @@
             {% comment %}{{ routes.all_products_collection_url }} {% endcomment %}
       </div>
 King:
+            <script>
+            console.log({{collections | json }})
+              </script>
             {% for collection in collections %}
     {{ collection.title }}<br>
             {% endfor %}
