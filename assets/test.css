@@ -11,5 +11,8 @@ body{
     box-shadow: 1px 1px 1px 1px black;
 }
 [type="button"]:hover{
+    background-color: lightgray;
+}
+[type="button"]:active{
     box-shadow: 1px 1px 1px 1px white;
 }
