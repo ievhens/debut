@@ -13,6 +13,7 @@
           {{ a | replace: "text", "button" }}<br>
           {% assign arr = a | replace: "text", "radio" | handleize | split: "-" %}<br>
           <ul>
+            {{ arr | reverse }}
             {% for i in arr %}
               <li>{{ i }}</li>
             {% endfor %}
