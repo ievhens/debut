@@ -11,7 +11,7 @@
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
           {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
           {{ a | replace: "text", "button" }}<br>
-          {% assign arr = a | replace: "text", "radio" | handleize | split: "-" | reverse %}<br>
+          {% assign arr = a | replace: "text", "radio" | handleize | split: "-"  %}<br>
           <ul>
             {% for i in arr %}
               <li>{{ i }}</li>
