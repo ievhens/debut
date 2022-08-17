@@ -10,7 +10,9 @@
           {{ a | times: 2 }}<br>
           {{ a | divided_by: 4 }}<br>
           {{ "now" | date: "%A, %d %B %Y, %H:%M" }}<br>
-          {{ collections | json }}<br>
+          {% for collection in collections %}
+            {{ collection | json }}<br><br>
+          {% endfor %}
         </div>
       </div>
     </div>
