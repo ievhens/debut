@@ -14,7 +14,7 @@
           {% assign arr = a | replace: "text", "radio" | handleize | split: "-" %}<br>
           <ul>
             {% for i in arr %}
-              <li>i</li>
+              <li>{{ i }}</li>
             {% endfor %}
           </ul>
           
