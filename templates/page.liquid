@@ -11,7 +11,6 @@
           {{ a | times: 2 }}<br>
           {{ a | divided_by: 4 }}<br>
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
-          {{ "now" | date: "%A, %d %B %Y, %H:%M" }}<br>
           {{ 'background_body_stamp.png' | asset_url | img_tag }}
           {% for c in collections %}
             {% assign b = c.image | img_url: "200x" %}
