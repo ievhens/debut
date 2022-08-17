@@ -13,7 +13,7 @@
           {% for c in collections %}
             {% assign b = c.image | img_url: "50x" %}
             <img src="{{ b }}"/><br>
-            {{ c.image | link_to: c.url, c.title }}
+            {{ c.title | link_to: c.url, c.title }}
           {% endfor %}
         </div>
       </div>
