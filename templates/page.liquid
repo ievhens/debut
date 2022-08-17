@@ -11,7 +11,7 @@
         {{ page.content }}
           <div style="background-color: #e95e61; color: black;">
                 {% for product in collections['all'].products %}
-                  {{ product.title }}
+                  {{ product.title }}<br>
                 {% endfor %}
             <div>{{ shop.products_count }}</div>
 
