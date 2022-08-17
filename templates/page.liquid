@@ -1,3 +1,4 @@
+{{ "test.css" | asset_url | stylesheet_tag }}
 <div class="page-width">
   <div class="grid">
     <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
@@ -6,7 +7,7 @@
       </div>
       <div class="rte">
         {% assign a = 5.2 %}
-        <div style="border: 1px solid grey; margin: 0 auto; padding: 1em; background-color: white;">
+        <div id="result" style="border: 1px solid grey; margin: 0 auto; padding: 1em; background-color: white;">
           {{ a | times: 2 }}<br>
           {{ a | divided_by: 4 }}<br>
           {{ "now" | date: "%A, %d %B %Y, %H:%M" }}<br>
