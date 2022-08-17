@@ -17,7 +17,6 @@
               <li>{{ i }}</li>
             {% endfor %}
           </ul>
-          
           {{ 'background_body_stamp.png' | asset_url | img_tag }}
           {% for c in collections %}
             {% assign b = c.image | img_url: "200x" %}
