@@ -11,7 +11,7 @@
           {{ a | divided_by: 4 }}<br>
           {{ "now" | date: "%A, %d %B %Y, %H:%M" }}<br>
           {% for collection in collections %}
-            {{ collection | json }}<br><br>
+            {{ collection.id | json }}<br><br>
           {% endfor %}
         </div>
       </div>
