@@ -4,17 +4,14 @@
       <div class="section-header text-center">
         <h1>{{ page.title }}</h1>
       </div>
-
       <div class="rte">
         {% assign a = "Hello" %}
             {{ a }}
         {{ page.content }}
           <div style="background-color: #e95e61; color: black;">
-                {% for product in collections['all'].products %}
-                  {{ product.title }}<br>
-                {% endfor %}
-            <div>{{ shop.products_count }}</div>
-
+            {% for product in collections['all'].products %}
+              {{ product.title }}<br>
+            {% endfor %}
           </div>
       </div>
     </div>
