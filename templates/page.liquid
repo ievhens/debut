@@ -5,9 +5,9 @@
         <h1> Liquid testing </h1>
       </div>
       <div class="rte">
-        {% assign a = 5 | plus: 20 %}
+        {% assign a = 5 | plus: 10 %}
         <div style="width: 50%; border: 1px solid grey; margin: 0 auto; padding: 1em;">
-          {{ a }}
+          {{ a | plus: 3 }}
         </div>
       </div>
     </div>
