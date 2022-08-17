@@ -1,3 +1,1 @@
-document.getElementById("result").onclick = function () {
- console.log("hey!") 
-}
+document.getElementById("result").onclick = console.log("hey!")
