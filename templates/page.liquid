@@ -11,8 +11,8 @@
           {{ a | divided_by: 4 }}<br>
           {{ "now" | date: "%A, %d %B %Y, %H:%M" }}<br>
           {% for c in collections %}
-            {% assign b = c.image.width %}
-            {{ b }}<br>
+            {% assign b = c.image.src %}
+            <img src="{{ b }}"/>
           {% endfor %}
         </div>
       </div>
