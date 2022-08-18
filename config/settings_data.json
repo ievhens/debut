@@ -185,6 +185,17 @@
           "show_vendor": false,
           "show_view_all": false
         }
+      },
+      "collection-delille": {
+        "type": "collection-delille",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "",
+          "grid": 2,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
