@@ -8,7 +8,7 @@
       <div class="rte">
         <div id="result">
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
-          {% assign a = ["10000", "11000", "12000"] %}
+          {% assign a = ["a", "b", "c"] %}
           {{ a | join: ", "}}<br>
           {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
           {{ a | replace: "text", "button" }}<br>
