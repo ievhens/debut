@@ -15,6 +15,10 @@
           {{ i | plus: 10 }}
           {% endfor %}<br>
 
+          {% for collection in collections %}
+            {{ product.title }}
+          {% endfor %}
+
           {% for product in collection["premium"].products %}
             {{ product.title }}
           {% endfor %}
