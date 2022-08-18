@@ -8,11 +8,17 @@
       <div class="rte">
         <div id="result">
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
+          
           {% assign a = "1,2,3,4,5" | split: "," %}
-          {{ a | join: ", " }}<br>
+          
           {% for i in a %} 
           {{ i | plus: 10 }}
           {% endfor %}<br>
+
+          {% for product in collection["top"] %}
+            {{ product.title }}
+          {% endfor %}
+          
           {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
           {{ a | replace: "text", "button" }}<br>
           {% assign arr = a | replace: "text", "radio" | handleize | split: "-"  %}<br>
