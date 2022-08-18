@@ -181,6 +181,23 @@
           "enable_payment_button": false,
           "show_share_buttons": true
         }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false
+        }
+      },
+      "166082024987effed5": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "top",
+          "grid": 2,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
@@ -190,7 +207,8 @@
       "featured-collections",
       "feature-row",
       "slideshow",
-      "166064210732ca6560"
+      "166064210732ca6560",
+      "166082024987effed5"
     ]
   },
   "presets": {
