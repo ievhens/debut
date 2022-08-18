@@ -2,16 +2,16 @@ body{
   background: lightgray;
 }
 #result{
-  border: 1px solid grey; 
-  margin: 0 auto; 
-  padding: 1em; 
+  border: 1px solid grey;
+  margin: 0 auto;
+  padding: 1em;
   background-color: white;
 }
 table{
   border-collapse: separate;
 }
 td{
-  border: 1px solid grey; 
+  border: 1px solid grey;
 }
 [type="button"]{
     box-shadow: 1px 1px 1px 1px black;
