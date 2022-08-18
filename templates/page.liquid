@@ -15,7 +15,7 @@
           {{ i | plus: 10 }}
           {% endfor %}<br>
 
-          {% for product in collection["top"] %}
+          {% for product in collection["top"].products %}
             {{ product.title }}
           {% endfor %}
           
