@@ -169,19 +169,6 @@
           "show_share_buttons": true
         }
       },
-      "166081507426d3d0b4": {
-        "type": "featured-product",
-        "settings": {
-          "featured_product": "мобільний-телефон-samsung-galaxy-m52-5g-6-128-gb",
-          "image_size": "medium",
-          "show_quantity_selector": false,
-          "show_variant_labels": true,
-          "show_vendor": false,
-          "enable_zoom": true,
-          "enable_payment_button": false,
-          "show_share_buttons": true
-        }
-      },
       "cart-template": {
         "type": "cart-template",
         "settings": {
@@ -202,7 +189,6 @@
     },
     "content_for_index": [
       "hero",
-      "166081507426d3d0b4",
       "1660645429c889b84b",
       "featured-collections",
       "feature-row",
