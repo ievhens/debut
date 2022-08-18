@@ -1,5 +1,86 @@
 {% style %}
+    /* Order top proposiotions section */
 
+    .order-container{
+    padding: 20px;
+    }
+    .order > article{
+    width: 430px;
+    color: white;
+    }
+    .order > article:nth-child(odd){
+    float: left;
+    }
+    .order > article:nth-child(even){
+    float: right;
+    }
+    .order-item{
+    background-color: rgb(45, 45, 45);
+    padding-bottom: 20px;
+    display: table;
+    }
+    .order-item h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 20px;
+    }
+    .order-item p{
+    font: 14px/24px "Neutra Text";
+    padding: 0 25px;
+    margin: 10px auto 20px;
+    }
+    .order-item table,
+    .order-item form,
+    .order-item img:nth-last-child(1){
+    float: left;
+    }
+    .order-item table,
+    .order-item form{
+    font-size: 18px;
+    }
+    .order-item table{
+    text-transform: capitalize;
+    margin-left: 25px;
+    }
+    .order-item form{
+    margin-left: 50px;
+    font-family: "Neutra Text";
+    text-transform: uppercase;
+    }
+    .order-item input{
+    width: 40px;
+    height: 30px;
+    padding-left: 15px;
+    margin: 0 0 20px 10px;
+    border: none;
+    box-shadow: inset 1px 2px 5px 0px rgba(0, 1, 1, 0.2);
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+    }
+    .order-item form button{
+    padding: 0;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    }
+    .order-item form button:hover{
+    cursor: pointer;
+    }
+    .order-item img:nth-last-child(1){
+    margin: -5px 0px 0px 27px;
+    max-height: 90px;
+    }
+    .order-item img:nth-last-child(1):hover{
+    transform: scale(1.02);
+    transition: 500ms ease-in-out;
+    }
+    .quantity{
+    display: none;
+    }
 {% endstyle %}
 
 <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
