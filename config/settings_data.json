@@ -161,7 +161,7 @@
         "type": "product-template",
         "settings": {
           "image_size": "medium",
-          "show_quantity_selector": false,
+          "show_quantity_selector": true,
           "show_variant_labels": true,
           "show_vendor": false,
           "enable_zoom": true,
