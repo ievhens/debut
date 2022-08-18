@@ -19,8 +19,10 @@
             {{ collection.title }}
           {% endfor %}
 
-          {% for product in collections["premium"]products %}
+          {% for product in collections["premiums"]products %}
             {{ product.title }}
+            {% else %}
+            <p>this collection is empty</p>
           {% endfor %}
           
           {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
