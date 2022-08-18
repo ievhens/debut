@@ -20,6 +20,8 @@
             {{ collection.title }}
           {% endtablerow %}
           </table>
+          {% form "test-form"%}
+          {% endform %}
 
           {% for product in collections["premiums"]products %}
             {{ product.title }}
