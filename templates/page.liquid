@@ -15,18 +15,11 @@
           {{ i | plus: 10 }}
           {% endfor %}<br>
 
+          <table>
           {% for collection in collections %}
             {{ collection.title }}
           {% endfor %}
-
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}
-          {% cycle 'one', 'two', 'three', 'four' %}          
+          </table>
 
           {% for product in collections["premiums"]products %}
             {{ product.title }}
