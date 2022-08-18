@@ -16,9 +16,9 @@
           {% endfor %}<br>
 
           <table>
-          {% for collection in collections %}
+          {% tablerow collection in collections %}
             {{ collection.title }}
-          {% endfor %}
+          {% endtablerow %}
           </table>
 
           {% for product in collections["premiums"]products %}
