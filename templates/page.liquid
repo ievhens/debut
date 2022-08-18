@@ -7,13 +7,13 @@
       </div>
       <div class="rte">
         <div id="result">
-          {% section "featured-product" %}
+
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
           
           {% assign a = "1,2,3,4,5" | split: "," %}
           
           {% for i in a %} 
-          {{ i | plus: 10 }}
+          {{ i | plus: 40 }}
           {% endfor %}<br>
 
           <table>
