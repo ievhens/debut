@@ -6,9 +6,9 @@
         <h1> Liquid testing </h1>
       </div>
       <div class="rte">
-        {% assign a = ["10000", "11000", "12000"] %}
         <div id="result">
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
+          {% assign a = ["10000", "11000", "12000"] %}
           {{ a | join: ", "}}<br>
           {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
           {{ a | replace: "text", "button" }}<br>
