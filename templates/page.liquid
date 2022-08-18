@@ -7,40 +7,7 @@
       </div>
       <div class="rte">
         <div id="result">
-
           {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
-          
-          {% assign a = "1,2,3,4,5" | split: "," %}
-          
-          {% for i in a %} 
-          {{ i | plus: 40 }}
-          {% endfor %}<br>
-
-          <table>
-          {% tablerow collection in collections %}
-            {{ collection.title }}
-          {% endtablerow %}
-          </table>
-          {% form "cart", cart%}
-            <input type='text' placeholder='hello, liquid!'>
-            <input type='submit' value='submit'>
-          {% endform %}
-
-          {% for product in collections["premium"]products %}
-            {{ product.title }}
-            {% else %}
-            <p>this collection is empty</p>
-          {% endfor %}
-          
-          {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
-          {{ a | replace: "text", "button" }}<br>
-          {% assign arr = a | replace: "text", "radio" | handleize | split: "-"  %}<br>
-          <ul>
-            {% for i in arr %}
-              <li>{{ i }}</li>
-            {% endfor %}
-          </ul>
-          {{ 'background_body_stamp.png' | asset_url | img_tag }}
           {% for c in collections %}
             {% assign b = c.image | img_url: "200x" %}
             <img src="{{ b }}"/><br>
