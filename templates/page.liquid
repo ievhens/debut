@@ -3,16 +3,10 @@
   <div class="grid">
     <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
       <div class="section-header text-center">
-        <h1> Liquid testing </h1>
+        <h1> Testing </h1>
       </div>
       <div class="rte">
         <div id="result">
-          {{ "now" | time_tag: "%A, %d %B %Y, %H:%M" }}<br>
-          {% for c in collections %}
-            {% assign b = c.image | img_url: "200x" %}
-            <img src="{{ b }}"/><br>
-            {{ c.title | link_to: c.url, c.title }}<br>
-          {% endfor %}
         </div>
       </div>
     </div>
