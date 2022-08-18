@@ -6,8 +6,7 @@
       "link_messages": {
         "new_window": "Öffnet ein neues Fenster.",
         "external": "Öffnet externe Webseite.",
-        "new_window_and_external":
-          "Öffnet externe Webseite in einem neuen Fenster."
+        "new_window_and_external": "Öffnet externe Webseite in einem neuen Fenster."
       }
     },
     "meta": {
@@ -31,13 +30,10 @@
       "login_form_password_placeholder": "Ihr Passwort",
       "login_form_submit": "Betreten",
       "signup_form_email_label": "E-Mail",
-      "signup_form_success":
-        "Wir senden Ihnen eine E-Mail, kurz bevor wir eröffnen!",
-      "admin_link_html":
-        "Sind Sie der Geschäftsinhaber? <a href=\"/admin\" class=\"text-link\">Melden Sie sich hier an</a>",
+      "signup_form_success": "Wir senden Ihnen eine E-Mail, kurz bevor wir eröffnen!",
+      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"\/admin\" class=\"text-link\">Melden Sie sich hier an<\/a>",
       "password_link": "Mit Passwort betreten",
-      "powered_by_shopify_html":
-        "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden"
+      "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden"
     },
     "social": {
       "share_on_facebook": "Teilen",
@@ -50,8 +46,7 @@
       }
     },
     "search": {
-      "no_results_html":
-        "Ihre Suche nach \"{{ terms }}\" hat keine Ergebnisse hervorgebracht.",
+      "no_results_html": "Ihre Suche nach \"{{ terms }}\" hat keine Ergebnisse hervorgebracht.",
       "results_with_count": {
         "one": "{{ count }} Ergebnis für \"{{ terms }}\"",
         "other": "{{ count }} Ergebnisse für \"{{ terms }}\""
@@ -92,10 +87,8 @@
     "map": {
       "address_error": "Kann die Adresse nicht finden",
       "address_no_results": "Keine Ergebnisse für diese Adresse",
-      "address_query_limit_html":
-        "Sie haben die Google- API-Nutzungsgrenze überschritten. Betrachten wir zu einem <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-Paket</a> zu aktualisieren.",
-      "auth_error_html":
-        "Es gab ein Problem bei Google Maps Konto zu authentifizieren.",
+      "address_query_limit_html": "Sie haben die Google- API-Nutzungsgrenze überschritten. Betrachten wir zu einem <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-Paket<\/a> zu aktualisieren.",
+      "auth_error_html": "Es gab ein Problem bei Google Maps Konto zu authentifizieren.",
       "section_heading": "Lage"
     }
   },
@@ -114,10 +107,8 @@
       "email": "E-Mail",
       "message": "Nachricht",
       "post": "Kommentar posten",
-      "moderated":
-        "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen",
-      "success_moderated":
-        "Ihr Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen.",
+      "moderated": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen",
+      "success_moderated": "Ihr Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen.",
       "success": "Ihr Kommentar wurde erfolgreich gepostet. Danke!",
       "comments_with_count": {
         "one": "{{ count }} Kommentar",
@@ -132,13 +123,11 @@
       "remove": "Entfernen",
       "subtotal": "Zwischensumme",
       "savings": "Sie sparen",
-      "shipping_at_checkout":
-        "Liefer- und Preisnachlässe an der Kasse berechnet",
+      "shipping_at_checkout": "Liefer- und Preisnachlässe an der Kasse berechnet",
       "update": "Einkaufswagen aktualisieren",
       "checkout": "Zur kasse",
       "empty": "Ihr Einkaufswagen ist im Moment leer.",
-      "cookies_required":
-        "Aktivieren Sie Cookies, um den Einkaufswagen benutzen zu können",
+      "cookies_required": "Aktivieren Sie Cookies, um den Einkaufswagen benutzen zu können",
       "cancel": "Abbrechen",
       "edit": "Bearbeiten",
       "continue_shopping": "Weiter einkaufen"
@@ -154,8 +143,7 @@
     "general": {
       "view_all": "Alle anzeigen",
       "view_all_label": "Sehen Sie alle Produkte in der {{ collection_name }}-Sammlung",
-      "no_matches":
-        "Es tut uns leid, aber Ihre Suche nach Produkten hat keine Treffer ergeben.",
+      "no_matches": "Es tut uns leid, aber Ihre Suche nach Produkten hat keine Treffer ergeben.",
       "items_with_count": {
         "one": "{{ count }} Produkt",
         "other": "{{ count }} Produkte"
@@ -184,8 +172,7 @@
       "phone": "Telefonnummer",
       "message": "Nachricht",
       "submit": "Absenden",
-      "post_success":
-        "Danke, dass Sie uns kontaktiert haben. Wir werden uns so schnell wie möglich bei Ihnen melden."
+      "post_success": "Danke, dass Sie uns kontaktiert haben. Wir werden uns so schnell wie möglich bei Ihnen melden."
     }
   },
   "customer": {
@@ -224,8 +211,7 @@
       "cancel": "Abbrechen",
       "edit": "Bearbeiten",
       "delete": "Löschen",
-      "delete_confirm":
-        "Sind Sie sicher, dass Sie diese Adresse löschen möchten?"
+      "delete_confirm": "Sind Sie sicher, dass Sie diese Adresse löschen möchten?"
     },
     "login": {
       "title": "Login",
@@ -271,10 +257,8 @@
       "email": "E-Mail",
       "submit": "Absenden",
       "cancel": "Abbrechen",
-      "subtext":
-        "Wir werden Ihnen eine E-Mail zum Zurücksetzen des Passworts schicken.",
-      "success":
-        "Wir haben Ihnen eine E-Mail mit einem Link zum Aktualisieren des Passworts geschickt."
+      "subtext": "Wir werden Ihnen eine E-Mail zum Zurücksetzen des Passworts schicken.",
+      "success": "Wir haben Ihnen eine E-Mail mit einem Link zum Aktualisieren des Passworts geschickt."
     },
     "reset_password": {
       "title": "Account-Passwort zurücksetzen",
@@ -295,15 +279,12 @@
   "homepage": {
     "onboarding": {
       "product_title": "Der Name Ihres Produkts",
-      "product_description":
-        "Diesen Abschnitt können Sie nutzen, um die Details Ihres Produkts zu beschreiben. Erzählen Sie den Kunden, wie Ihr Produkt aussieht, sich anfühlt und designt ist. Fügen Sie Einzelheiten zu Farbe, verwendeten Materialien, Größe und Produktionsort hinzu.",
+      "product_description": "Diesen Abschnitt können Sie nutzen, um die Details Ihres Produkts zu beschreiben. Erzählen Sie den Kunden, wie Ihr Produkt aussieht, sich anfühlt und designt ist. Fügen Sie Einzelheiten zu Farbe, verwendeten Materialien, Größe und Produktionsort hinzu.",
       "collection_title": "Der Name Ihrer Kollektion",
       "blog_title": "Der Titel Ihres Posts",
-      "blog_excerpt":
-        "Ihr Laden hat noch keine Blogposts veröffentlicht. Ein Blog kann genutzt werden, um über die Einführung neuer Produkte, Tipps oder andere Neuigkeiten, die Sie mit Ihren Kunden teilen möchten, zu berichten. Für Inspiration und Ratschläge für Ihren eigenen Laden und Blog können Sie den E-Commerce-Blog von Shopify besuchen.",
+      "blog_excerpt": "Ihr Laden hat noch keine Blogposts veröffentlicht. Ein Blog kann genutzt werden, um über die Einführung neuer Produkte, Tipps oder andere Neuigkeiten, die Sie mit Ihren Kunden teilen möchten, zu berichten. Für Inspiration und Ratschläge für Ihren eigenen Laden und Blog können Sie den E-Commerce-Blog von Shopify besuchen.",
       "blog_author": "Name des Autors",
-      "no_content":
-        "Dieser Bereich hat zur Zeit keinen Inhalt. Füge diesem Bereich über die Seitenleiste Inhalte hinzu."
+      "no_content": "Dieser Bereich hat zur Zeit keinen Inhalt. Füge diesem Bereich über die Seitenleiste Inhalte hinzu."
     }
   },
   "layout": {
@@ -351,8 +332,7 @@
       "disabled": "Deaktiviert",
       "expired": "Abgelaufen am {{ expiry }}",
       "active": "Läuft ab am {{ expiry }}",
-      "redeem_html":
-        "Nutzen Sie an der Kasse diesen Code, um Ihre {{ value }} Geschenkkarte einzulösen",
+      "redeem_html": "Nutzen Sie an der Kasse diesen Code, um Ihre {{ value }} Geschenkkarte einzulösen",
       "shop_link": "Einkauf beginnen",
       "print": "Diesen Geschenkgutschein ausdrucken",
       "remaining_html": "{{ balance }} übrig",

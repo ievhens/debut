@@ -21,7 +21,7 @@
     "pagination": {
       "previous": "前",
       "next": "次",
-      "current_page": "ページ： {{ current }} / {{ total }}"
+      "current_page": "ページ： {{ current }} \/ {{ total }}"
     },
     "password_page": {
       "opening_soon": "間もなくオープンします",
@@ -31,8 +31,7 @@
       "login_form_submit": "入力する",
       "signup_form_email_label": "メール",
       "signup_form_success": "ストアがオープンする直前にメールでお知らせします！",
-      "admin_link_html":
-        "あなたはストアのオーナーですか？<a href=\"/admin\" class=\"text-link\">こちらからログインする</a>",
+      "admin_link_html": "あなたはストアのオーナーですか？<a href=\"\/admin\" class=\"text-link\">こちらからログインする<\/a>",
       "password_link": "パスワードを入力してください",
       "powered_by_shopify_html": "このお店は{{ shopify }}を使用しています"
     },
@@ -88,8 +87,7 @@
     "map": {
       "address_error": "住所を調べる際にエラーが発生しました",
       "address_no_results": "その住所は見つかりませんでした",
-      "address_query_limit_html":
-        "Google APIの使用量の制限を超えました。<a href=\"https://developers.google.com/maps/premium/usage-limits\">プレミアムプラン</a>へのアップグレードをご検討ください。",
+      "address_query_limit_html": "Google APIの使用量の制限を超えました。<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">プレミアムプラン<\/a>へのアップグレードをご検討ください。",
       "auth_error_html": "あなたのGoogle Mapsのアカウント認証で問題が発生しました。",
       "section_heading": "アクセス"
     }
@@ -281,12 +279,10 @@
   "homepage": {
     "onboarding": {
       "product_title": "あなたの商品の名前",
-      "product_description":
-        "このエリアはあなたの商品の詳細を記載するために使うことができます。お客様に商品についての情報を伝えましょう。色や材料、サイズ、どこで作られたのかなどの情報も追加しましょう。",
+      "product_description": "このエリアはあなたの商品の詳細を記載するために使うことができます。お客様に商品についての情報を伝えましょう。色や材料、サイズ、どこで作られたのかなどの情報も追加しましょう。",
       "collection_title": "コレクションの名前",
       "blog_title": "記事のタイトル",
-      "blog_excerpt":
-        "あなたはまだブログ記事を投稿していません。ブログは新商品情報やニュースなどの情報発信に使用することができます。Shopifyのブログを確認して、ストアとブログについてのインスピレーションとアドバイスをゲットしましょう。",
+      "blog_excerpt": "あなたはまだブログ記事を投稿していません。ブログは新商品情報やニュースなどの情報発信に使用することができます。Shopifyのブログを確認して、ストアとブログについてのインスピレーションとアドバイスをゲットしましょう。",
       "blog_author": "筆者",
       "no_content": "このセクションには現在コンテンツがございません。サイドバーを使ってコンテンツを追加しましょう。"
     }

@@ -30,10 +30,8 @@
       "login_form_password_placeholder": "A sua palavra-passe",
       "login_form_submit": "Entrar",
       "signup_form_email_label": "Email",
-      "signup_form_success":
-        "Iremos enviar-lhe um email imediatamente antes de abrirmos!",
-      "admin_link_html":
-        "É o dono da loja? <a href=\"/admin\" class=\"text-link\">Inicie sessão aqui</a>",
+      "signup_form_success": "Iremos enviar-lhe um email imediatamente antes de abrirmos!",
+      "admin_link_html": "É o dono da loja? <a href=\"\/admin\" class=\"text-link\">Inicie sessão aqui<\/a>",
       "password_link": "Entre usando a palavra-passe",
       "powered_by_shopify_html": "Esta loja será movida por {{ shopify }}"
     },
@@ -48,8 +46,7 @@
       }
     },
     "search": {
-      "no_results_html":
-        "A sua pesquisa por \"{{ terms }}\" não produziu resultados.",
+      "no_results_html": "A sua pesquisa por \"{{ terms }}\" não produziu resultados.",
       "results_with_count": {
         "one": "{{ count }} resultado para \"{{ terms }}\"",
         "other": "{{ count }} resultados para \"{{ terms }}\""
@@ -90,10 +87,8 @@
     "map": {
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html":
-        "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plano Premium</a>.",
-      "auth_error_html":
-        "Houve um problema autenticação de sua conta do Google Maps.",
+      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
+      "auth_error_html": "Houve um problema autenticação de sua conta do Google Maps.",
       "section_heading": "Localização"
     }
   },
@@ -112,10 +107,8 @@
       "email": "Email",
       "message": "Mensagem",
       "post": "Publicar comentário",
-      "moderated":
-        "Tenha em atenção que os comentários precisam de ser aprovados antes de serem exibidos",
-      "success_moderated":
-        "O seu comentário foi publicado com sucesso! Obrigado!",
+      "moderated": "Tenha em atenção que os comentários precisam de ser aprovados antes de serem exibidos",
+      "success_moderated": "O seu comentário foi publicado com sucesso! Obrigado!",
       "success": "Seu comentário foi postado! Obrigado!",
       "comments_with_count": {
         "one": "{{ count }} comentário",
@@ -150,8 +143,7 @@
     "general": {
       "view_all": "Ver todo",
       "view_all_label": "Ver todos os produtos da coleção {{ collection_name }}",
-      "no_matches":
-        "Lamentamos, mas nenhum produto corresponde à sua pesquisa.",
+      "no_matches": "Lamentamos, mas nenhum produto corresponde à sua pesquisa.",
       "items_with_count": {
         "one": "{{ count }} item",
         "other": "{{ count }} itens"
@@ -180,8 +172,7 @@
       "phone": "Número de Telefone",
       "message": "Mensagem",
       "submit": "Enviar",
-      "post_success":
-        "Obrigado por entrar em contacto connosco. Responder-lhe-emos logo que possível."
+      "post_success": "Obrigado por entrar em contacto connosco. Responder-lhe-emos logo que possível."
     }
   },
   "customer": {
@@ -288,15 +279,12 @@
   "homepage": {
     "onboarding": {
       "product_title": "O nome do seu produto",
-      "product_description":
-        "Esta área é usada para descrever o seu produto detalhadamente. Informe o cliente do aspeto, toque e estilo do seu produto. Adicione detalhes sobre a cor, materiais usados, tamanhos e onde foi fabricado.",
+      "product_description": "Esta área é usada para descrever o seu produto detalhadamente. Informe o cliente do aspeto, toque e estilo do seu produto. Adicione detalhes sobre a cor, materiais usados, tamanhos e onde foi fabricado.",
       "collection_title": "O nome da sua coleção",
       "blog_title": "O título do seu post",
-      "blog_excerpt":
-        "A sua loja não publicou ainda qualquer post no blog. Um blog pode ser usado para falar de lançamentos de novos produtos, dicas e outras notícias que deseje partilhar com os seus clientes. Pode dar uma vista de olhos no blog comercial da Shopify para se inspirar e obter alguns conselhos para a sua própria loja e blog.",
+      "blog_excerpt": "A sua loja não publicou ainda qualquer post no blog. Um blog pode ser usado para falar de lançamentos de novos produtos, dicas e outras notícias que deseje partilhar com os seus clientes. Pode dar uma vista de olhos no blog comercial da Shopify para se inspirar e obter alguns conselhos para a sua própria loja e blog.",
       "blog_author": "Nome do autor",
-      "no_content":
-        "Esta sección actualmente no incluye ningún contenido. Añade un contenido a esta sección utilizando la barra lateral."
+      "no_content": "Esta sección actualmente no incluye ningún contenido. Añade un contenido a esta sección utilizando la barra lateral."
     }
   },
   "layout": {
@@ -338,15 +326,13 @@
   },
   "gift_cards": {
     "issued": {
-      "title_html":
-        "Aqui está o seu cartão-presente de {{ value }} para {{ shop }}!",
+      "title_html": "Aqui está o seu cartão-presente de {{ value }} para {{ shop }}!",
       "subtext": "Aqui está o seu cartão-presente!",
       "gift_card_code": "código do cartão de presente",
       "disabled": "Inválido",
       "expired": "Expirou em {{ expiry }}",
       "active": "Expira em {{ expiry }}",
-      "redeem_html":
-        "Use este código ao fazer o check-out para redimir o seu {{ value }} cartão-presente",
+      "redeem_html": "Use este código ao fazer o check-out para redimir o seu {{ value }} cartão-presente",
       "shop_link": "Começar a fazer compras",
       "print": "Imprimir este cartão presente",
       "remaining_html": "{{ balance }} restante",

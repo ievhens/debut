@@ -1,0 +1,6 @@
+development:
+  password: shptka_b746b7808047c761855c8642046b985c
+  theme_id: "134673760512"
+  store: gwa-study-eugene.myshopify.com
+#  proxy: http://localhost:3000
+  ignore_files:

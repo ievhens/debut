@@ -31,8 +31,7 @@
       "login_form_submit": "Accedi",
       "signup_form_email_label": "Email",
       "signup_form_success": "Ti invieremo un'email appena prima di aprire!",
-      "admin_link_html":
-        "Sei il proprietario del negozio? <a href=\"/admin\" class=\"text-link\">Accedi qui</a>",
+      "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"text-link\">Accedi qui<\/a>",
       "password_link": "Accedi usando la password",
       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
     },
@@ -47,8 +46,7 @@
       }
     },
     "search": {
-      "no_results_html":
-        "La tua ricerca di \"{{ terms }}\" non ha prodotto risultati.",
+      "no_results_html": "La tua ricerca di \"{{ terms }}\" non ha prodotto risultati.",
       "results_with_count": {
         "one": "{{ count }} risultato per \"{{ terms }}\"",
         "other": "{{ count }} risultati per \"{{ terms }}\""
@@ -88,12 +86,9 @@
     },
     "map": {
       "address_error": "Errore durante la ricerca dell'indirizzo",
-      "address_no_results":
-        "La ricerca non ha prodotto alcun risultato per quell’indirizzo",
-      "address_query_limit_html":
-        "Hai superato il limite di utilizzo dell'API di Google. Considera l’aggiornamento a un <a href=\"https://developers.google.com/maps/premium/usage-limits\">Piano Premium</a>.",
-      "auth_error_html":
-        "Si è verificato un problema di autenticazione con il tuo account di Google Maps.",
+      "address_no_results": "La ricerca non ha prodotto alcun risultato per quell’indirizzo",
+      "address_query_limit_html": "Hai superato il limite di utilizzo dell'API di Google. Considera l’aggiornamento a un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Piano Premium<\/a>.",
+      "auth_error_html": "Si è verificato un problema di autenticazione con il tuo account di Google Maps.",
       "section_heading": "Posizione"
     }
   },
@@ -112,10 +107,8 @@
       "email": "Email",
       "message": "Messaggio",
       "post": "Pubblica commento",
-      "moderated":
-        "Si prega di notare che i commenti sono soggetti ad approvazione prima di essere pubblicati",
-      "success_moderated":
-        "Il tuo commento è stato pubblicato. Lo pubblicheremo fra poco, il nostro blog è soggetto a moderazione.",
+      "moderated": "Si prega di notare che i commenti sono soggetti ad approvazione prima di essere pubblicati",
+      "success_moderated": "Il tuo commento è stato pubblicato. Lo pubblicheremo fra poco, il nostro blog è soggetto a moderazione.",
       "success": "Il tuo commento è stato pubblicato! Grazie!",
       "comments_with_count": {
         "one": "{{ count }} commento",
@@ -130,8 +123,7 @@
       "remove": "Rimuovi",
       "subtotal": "Totale parziale",
       "savings": "Stai risparmiando",
-      "shipping_at_checkout":
-        "Spedizione e tasse calcolate in fase di check-out",
+      "shipping_at_checkout": "Spedizione e tasse calcolate in fase di check-out",
       "update": "Aggiornamento",
       "checkout": "Check-out",
       "empty": "Il tuo carrello è attualmente vuoto.",
@@ -180,8 +172,7 @@
       "phone": "Numero di telefono",
       "message": "Messaggio",
       "submit": "Invia",
-      "post_success":
-        "Grazie per averci contattato. Risponderemo al più presto possibile."
+      "post_success": "Grazie per averci contattato. Risponderemo al più presto possibile."
     }
   },
   "customer": {
@@ -267,8 +258,7 @@
       "submit": "Invia",
       "cancel": "Annulla",
       "subtext": "Riceverai un'email per reimpostare la tua password.",
-      "success":
-        "Ti abbiamo inviato un'email con un link per aggiornare la tua password."
+      "success": "Ti abbiamo inviato un'email con un link per aggiornare la tua password."
     },
     "reset_password": {
       "title": "Reimposta la tua password",
@@ -289,15 +279,12 @@
   "homepage": {
     "onboarding": {
       "product_title": "Nome del tuo prodotto",
-      "product_description":
-        "Quest’area è per descrivere i dettagli del tuo prodotto. Qui puoi descrivere l'aspetto, il look e lo stile del prodotto ai tuoi clienti. Aggiungi dettagli sul colore, sui materiali utilizzati, sulle misure e su dove è stato creato.",
+      "product_description": "Quest’area è per descrivere i dettagli del tuo prodotto. Qui puoi descrivere l'aspetto, il look e lo stile del prodotto ai tuoi clienti. Aggiungi dettagli sul colore, sui materiali utilizzati, sulle misure e su dove è stato creato.",
       "collection_title": "Nome della tua collezione",
       "blog_title": "Titolo del tuo post",
-      "blog_excerpt":
-        "Il tuo negozio non ha ancora pubblicato nessun post sul blog. Un blog può essere utilizzato per parlare del lancio di nuovi prodotti, dare suggerimenti o altre notizie che desideri condividere con i tuoi clienti. Dai un’occhiata al blog di ecommerce di Shopify per farti ispirare e per trovare idee e consigli relativi al tuo negozio e blog.",
+      "blog_excerpt": "Il tuo negozio non ha ancora pubblicato nessun post sul blog. Un blog può essere utilizzato per parlare del lancio di nuovi prodotti, dare suggerimenti o altre notizie che desideri condividere con i tuoi clienti. Dai un’occhiata al blog di ecommerce di Shopify per farti ispirare e per trovare idee e consigli relativi al tuo negozio e blog.",
       "blog_author": "Nome dell'autore",
-      "no_content":
-        "Attualmente questa sezione non contiene nessun contenuto. Aggiungi contenuto a questa sezione utilizzando la barra laterale."
+      "no_content": "Attualmente questa sezione non contiene nessun contenuto. Aggiungi contenuto a questa sezione utilizzando la barra laterale."
     }
   },
   "layout": {
@@ -345,8 +332,7 @@
       "disabled": "Disabilitato",
       "expired": "Scaduto il {{ expiry }}",
       "active": "Scade il {{ expiry }}",
-      "redeem_html":
-        "Utilizza questo codice alla cassa per riscattare la tua carta regalo di {{ value }}",
+      "redeem_html": "Utilizza questo codice alla cassa per riscattare la tua carta regalo di {{ value }}",
       "shop_link": "Inizia a fare shopping",
       "print": "Stampa questo buono regalo",
       "remaining_html": "{{ balance }} rimasti",

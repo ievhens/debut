@@ -4,8 +4,8 @@
     "theme_name": "Debut",
     "theme_author": "Shopify",
     "theme_version": "3.1.1",
-    "theme_documentation_url": "https://help.shopify.com/manual/using-themes/themes-by-shopify/debut",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/using-themes\/themes-by-shopify\/debut",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": {
@@ -751,9 +751,9 @@
           "fr": "Image"
         },
         "info": {
-          "en": "Shown when sharing a link on social media. [Learn more](https://help.shopify.com/manual/using-themes/troubleshooting/showing-social-media-thumbnail-images/) about image thumbnails.",
-          "de": "Wird gezeigt, wenn ein Link sozial geteilt wird. [Mehr erfahren](https://help.shopify.com/manual/using-themes/troubleshooting/showing-social-media-thumbnail-images/)",
-          "fr": "Affichée lors du partage d'un lien sur les réseaux sociaux. [En savoir plus](https://help.shopify.com/manual/using-themes/troubleshooting/showing-social-media-thumbnail-images/)."
+          "en": "Shown when sharing a link on social media. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) about image thumbnails.",
+          "de": "Wird gezeigt, wenn ein Link sozial geteilt wird. [Mehr erfahren](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/)",
+          "fr": "Affichée lors du partage d'un lien sur les réseaux sociaux. [En savoir plus](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/)."
         }
       },
       {
@@ -811,9 +811,9 @@
           "fr": "Twitter"
         },
         "info": {
-          "en": "https://twitter.com/shopify",
-          "de": "https://twitter.com/shopify",
-          "fr": "https://twitter.com/shopify"
+          "en": "https:\/\/twitter.com\/shopify",
+          "de": "https:\/\/twitter.com\/shopify",
+          "fr": "https:\/\/twitter.com\/shopify"
         }
       },
       {
@@ -825,9 +825,9 @@
           "fr": "Facebook"
         },
         "info": {
-          "en": "https://facebook.com/shopify",
-          "de": "https://facebook.com/shopify",
-          "fr": "https://facebook.com/shopify"
+          "en": "https:\/\/facebook.com\/shopify",
+          "de": "https:\/\/facebook.com\/shopify",
+          "fr": "https:\/\/facebook.com\/shopify"
         }
       },
       {
@@ -839,9 +839,9 @@
           "fr": "Pinterest"
         },
         "info": {
-          "en": "https://pinterest.com/shopify",
-          "de": "https://pinterest.com/shopify",
-          "fr": "https://pinterest.com/shopify"
+          "en": "https:\/\/pinterest.com\/shopify",
+          "de": "https:\/\/pinterest.com\/shopify",
+          "fr": "https:\/\/pinterest.com\/shopify"
         }
       },
       {
@@ -853,9 +853,9 @@
           "fr": "Instagram"
         },
         "info": {
-          "en": "http://instagram.com/shopify",
-          "de": "http://instagram.com/shopify",
-          "fr": "http://instagram.com/shopify"
+          "en": "http:\/\/instagram.com\/shopify",
+          "de": "http:\/\/instagram.com\/shopify",
+          "fr": "http:\/\/instagram.com\/shopify"
         }
       },
       {
@@ -867,9 +867,9 @@
           "fr": "Tumblr"
         },
         "info": {
-          "en": "http://shopify.tumblr.com",
-          "de": "http://shopify.tumblr.com",
-          "fr": "http://shopify.tumblr.com"
+          "en": "http:\/\/shopify.tumblr.com",
+          "de": "http:\/\/shopify.tumblr.com",
+          "fr": "http:\/\/shopify.tumblr.com"
         }
       },
       {
@@ -881,9 +881,9 @@
           "fr": "Snapchat"
         },
         "info": {
-          "en": "https://www.snapchat.com/add/shopify",
-          "de": "https://www.snapchat.com/add/shopify",
-          "fr": "https://www.snapchat.com/add/shopify"
+          "en": "https:\/\/www.snapchat.com\/add\/shopify",
+          "de": "https:\/\/www.snapchat.com\/add\/shopify",
+          "fr": "https:\/\/www.snapchat.com\/add\/shopify"
         }
       },
       {
@@ -895,9 +895,9 @@
           "fr": "YouTube"
         },
         "info": {
-          "en": "https://www.youtube.com/shopify",
-          "de": "https://www.youtube.com/shopify",
-          "fr": "https://www.youtube.com/shopify"
+          "en": "https:\/\/www.youtube.com\/shopify",
+          "de": "https:\/\/www.youtube.com\/shopify",
+          "fr": "https:\/\/www.youtube.com\/shopify"
         }
       },
       {
@@ -909,9 +909,9 @@
           "fr": "Vimeo"
         },
         "info": {
-          "en": "https://vimeo.com/shopify",
-          "de": "https://vimeo.com/shopify",
-          "fr": "https://vimeo.com/shopify"
+          "en": "https:\/\/vimeo.com\/shopify",
+          "de": "https:\/\/vimeo.com\/shopify",
+          "fr": "https:\/\/vimeo.com\/shopify"
         }
       }
     ]
