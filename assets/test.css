@@ -7,7 +7,7 @@ body{
   padding: 1em; 
   background-color: white;
 }
-table{
+td{
   border: 1px solid grey; 
 }
 [type="button"]{
