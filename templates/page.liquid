@@ -12,7 +12,7 @@
           {{ a | join: ", "}}<br>
           {% for i in a %} 
           {{ i | plus: 10 }}
-          {% endfor %}
+          {% endfor %}<br>
           {% assign a = "<input type='text' placeholder='hello, liquid!'>" %}
           {{ a | replace: "text", "button" }}<br>
           {% assign arr = a | replace: "text", "radio" | handleize | split: "-"  %}<br>
