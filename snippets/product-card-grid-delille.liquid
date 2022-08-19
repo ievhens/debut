@@ -35,9 +35,9 @@
             <td>case</td>
         </tr>
         <tr>
-            <td>{{ product.price }}</td>
+            <td>{{ product.price | money }}</td>
             <td>/</td>
-            <td>{{ product.price | times: 12}}</td>
+            <td>{{ product.price | times: 12 | money}}</td>
         </tr>
     </table>
     <form action="">
