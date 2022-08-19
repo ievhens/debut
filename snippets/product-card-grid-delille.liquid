@@ -13,7 +13,6 @@
         {% endunless %}
         <h3 class="" aria-hidden="true">{% cycle "Meet the", "Order Yours" %} {% cycle "2010", "2012" %} {{ product.title }} {% cycle "Today", "" %}!</h3>
                 <img id="{{ img_id }}"
-                     class="grid-view-item__image lazyload"
                      src="{{ product.featured_image | img_url: '300x300' }}"
                      data-src="{{ img_url }}"
                      data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
@@ -44,15 +43,6 @@
             <button type="submit" value="Submit">buy now</button>
         </form>
         <a href=""><img class="btn" src="./img/button_buy.png" alt="buy de lille wine"></a>
-
-        <noscript>
-            {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
-            <img class="grid-view-item__image" src="{{ product.featured_image.src | img_url: image_size, scale: 2 }}"
-                 alt="{{ product.featured_image.alt }}"
-                 style="max-width: {{ max_height | times: product.featured_image.aspect_ratio }}px;">
-        </noscript>
-
-
         <dl>
             {% if section.settings.show_vendor %}
                 <div class="grid-view-item__vendor">
