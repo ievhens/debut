@@ -41,7 +41,7 @@
 }
 .order-item-price,
 .order-item form{
-    font-size: 18px;
+    font-size: 14px;
 }
 table.order-item-price{
     text-transform: capitalize;
