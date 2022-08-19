@@ -1,8 +1,8 @@
 <div class="test grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
-    <a class="grid-view-item__link grid-view-item__image-container product-card__link"
-       href="{{ product.url | within: collection }}">
-        <span class="visually-hidden">{{ product.title }}</span>
-    </a>
+    {% comment %}<a class="grid-view-item__link grid-view-item__image-container product-card__link"{% endcomment %}
+       {% comment %}href="{{ product.url | within: collection }}">{% endcomment %}
+        {% comment %}<span class="visually-hidden">{{ product.title }}</span>{% endcomment %}
+    {% comment %}</a>{% endcomment %}
 
     {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
     {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
