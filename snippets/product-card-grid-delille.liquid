@@ -43,7 +43,7 @@
             <div class="quantity more">+</div>
             <button type="submit" value="Submit">buy now</button>
         </form>
-        <a href=""><img class="order-item-btn" src="./img/button_buy.png" alt="buy de lille wine"></a>
+        <a href=""><img class="order-item-btn" src="{{ 'button_buy.png' | asset_url }}" alt="buy de lille wine"></a>
 
         <noscript>
             {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
