@@ -39,6 +39,8 @@ table.order-item-price{
     text-transform: capitalize;
     margin-left: 25px;
     width: fit-content;
+}
+table.order-item-price td{
     border: none;
 }
 .order-item form{
