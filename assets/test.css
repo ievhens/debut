@@ -35,7 +35,7 @@
 .order-item form{
     font-size: 18px;
 }
-.order-item-price{
+table.order-item-price{
     text-transform: capitalize;
     margin-left: 25px;
     width: fit-content;
