@@ -43,6 +43,15 @@
             <button type="submit" value="Submit">buy now</button>
         </form>
         <a href=""><img class="btn" src="./img/button_buy.png" alt="buy de lille wine"></a>
+
+        <noscript>
+            {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
+            <img class="grid-view-item__image" src="{{ product.featured_image.src | img_url: image_size, scale: 2 }}"
+                 alt="{{ product.featured_image.alt }}"
+                 style="max-width: {{ max_height | times: product.featured_image.aspect_ratio }}px;">
+        </noscript>
+
+
         <dl>
             {% if section.settings.show_vendor %}
                 <div class="grid-view-item__vendor">
