@@ -190,7 +190,7 @@
         "type": "collection-delille",
         "settings": {
           "title": "Featured collection",
-          "collection": "",
+          "collection": "de-lille-cellars",
           "grid": 2,
           "rows": 1,
           "show_vendor": false,
