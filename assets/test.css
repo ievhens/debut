@@ -26,16 +26,16 @@
     padding: 0 25px;
     margin: 10px auto 20px;
 }
-table.order-item-price,
+.order-item-price,
 .order-item form,
 .order-item img:nth-last-child(1){
     float: left;
 }
-table.order-item-price,
+.order-item-price,
 .order-item form{
     font-size: 18px;
 }
-table.order-item-price{
+.order-item-price{
     text-transform: capitalize;
     margin-left: 25px;
 }
