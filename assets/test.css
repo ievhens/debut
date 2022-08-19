@@ -7,16 +7,8 @@
 
 .order-container{
     padding: 20px;
-}
-.order > article{
     width: 430px;
     color: white;
-}
-.order > article:nth-child(odd){
-    float: left;
-}
-.order > article:nth-child(even){
-    float: right;
 }
 .order-item{
     background-color: rgb(45, 45, 45);
