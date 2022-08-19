@@ -43,6 +43,7 @@ table.order-item-price{
     text-transform: capitalize;
     margin-left: 25px;
     width: fit-content;
+    padding: 0;
 }
 table.order-item-price td{
     border: none;
