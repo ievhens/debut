@@ -12,7 +12,9 @@
             {% include 'image-style' with image: product.featured_image, width: max_height, height: max_height, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
         {% endunless %}
         <h3 class="" aria-hidden="true">{% cycle "Meet the", "Order Yours" %} {% cycle "2010", "2012" %} {{ product.title }} {% cycle "Today", "" %}!</h3>
+
                 <img id="{{ img_id }}"
+                     class="grid-view-item__image lazyload"
                      src="{{ product.featured_image | img_url: '300x300' }}"
                      data-src="{{ img_url }}"
                      data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
