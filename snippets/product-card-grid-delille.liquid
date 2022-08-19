@@ -24,7 +24,7 @@
                  alt="">
         </div>
     </div>
-    <div class="h4 grid-view-item__title" aria-hidden="true">{% cycle "Meet the", "Order Yours" %} {% cycle "2010", "2012" %} {{ product.title }} {% cycle "Today", "" %}!</div>
+    <p class="h4 grid-view-item__title" aria-hidden="true"> {{ product.description }} </p>
 
     <noscript>
         {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
