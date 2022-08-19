@@ -25,6 +25,29 @@
         </div>
     </div>
     <p class="" aria-hidden="true"> {{ product.description }} </p>
+    <table>
+        <tr>
+            <td colspan="3">price</td>
+        </tr>
+        <tr>
+            <td>bottle</td>
+            <td>/</td>
+            <td>case</td>
+        </tr>
+        <tr>
+            <td>{{ product.price }}</td>
+            <td>/</td>
+            <td>$480</td>
+        </tr>
+    </table>
+    <form action="">
+        <label for="quantity1">qty</label>
+        <div class="quantity less">–</div>
+        <input type="number" id="quantity1" name="quantity" value="1" min="1" max="100"><br>
+        <div class="quantity more">+</div>
+        <button type="submit" value="Submit">buy now</button>
+    </form>
+    <a href=""><img class="btn" src="./img/button_buy.png" alt="buy de lille wine"></a>
 
     <noscript>
         {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
