@@ -26,7 +26,7 @@
     padding: 0 25px;
     margin: 10px auto 20px;
 }
-.order-item table,
+.order-item-price,
 .order-item form,
 .order-item img:nth-last-child(1){
     float: left;
