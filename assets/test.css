@@ -48,6 +48,10 @@ table.order-item-price{
 table.order-item-price td{
     border: none;
 }
+table.order-item-price th,
+table.order-item-price td{
+    padding: 0;
+}
 .order-item form{
     margin-left: 50px;
     font-family: "Neutra Text";
