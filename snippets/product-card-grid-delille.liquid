@@ -35,7 +35,7 @@
             <td>case</td>
         </tr>
         <tr>
-            <td>{{ product.price | money }}</td>
+            <td>{% include 'product-price' %}</td>
             <td>/</td>
             <td>{{ product.price | times: 12 | money}}</td>
         </tr>
@@ -69,7 +69,7 @@
             </div>
         {% endif %}
 
-        {% include 'product-price' %}
+
     </dl>
 </div>
 
