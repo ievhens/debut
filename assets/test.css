@@ -31,6 +31,8 @@
     font: 14px/24px "Neutra Text";
     padding: 0 25px;
     margin: 10px auto 20px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 .order-item-price,
 .order-item form,
