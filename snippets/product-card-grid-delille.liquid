@@ -24,6 +24,7 @@
                  alt="">
         </div>
     </div>
+    <div class="h4 grid-view-item__title" aria-hidden="true">{% cycle "Meet the", "Order Yours" %} {% cycle "2010", "2012" %} {{ product.title }} {% cycle "Today", "" %}!</div>
 
     <noscript>
         {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
@@ -49,38 +50,5 @@
     </dl>
 </div>
 
-{% comment %}<article class="order-container white-transparent top-margined">{% endcomment %}
-    {% comment %}<div class="order-item">{% endcomment %}
-        {% comment %}<h3>Order Your D2 2010 Release Today!</h3>{% endcomment %}
-        {% comment %}<img class="bottle" src="./img/bottle_2010d2Columbia.jpg" alt="D2 wine year 2010">{% endcomment %}
-        {% comment %}<p>This 2012 Gold Medal winner of the Sunset International Wine{% endcomment %}
-            {% comment %}Compeition is a must have for your collection! Showing wonderful{% endcomment %}
-            {% comment %}complex aromas of red and black berries, anise, nutmeg, cedar,{% endcomment %}
-            {% comment %}cocoa and wood smoked cinnamon characters.{% endcomment %}
-        {% comment %}</p>{% endcomment %}
-        {% comment %}<table>{% endcomment %}
-            {% comment %}<tr>{% endcomment %}
-                {% comment %}<td colspan="3">price</td>{% endcomment %}
-            {% comment %}</tr>{% endcomment %}
-            {% comment %}<tr>{% endcomment %}
-                {% comment %}<td>bottle</td>{% endcomment %}
-                {% comment %}<td>/</td>{% endcomment %}
-                {% comment %}<td>case</td>{% endcomment %}
-            {% comment %}</tr>{% endcomment %}
-            {% comment %}<tr>{% endcomment %}
-                {% comment %}<td>$40</td>{% endcomment %}
-                {% comment %}<td>/</td>{% endcomment %}
-                {% comment %}<td>$480</td>{% endcomment %}
-            {% comment %}</tr>{% endcomment %}
-        {% comment %}</table>{% endcomment %}
-        {% comment %}<form action="">{% endcomment %}
-            {% comment %}<label for="quantity1">qty</label>{% endcomment %}
-            {% comment %}<div class="quantity less">–</div>{% endcomment %}
-            {% comment %}<input type="number" id="quantity1" name="quantity" value="1" min="1" max="100"><br>{% endcomment %}
-            {% comment %}<div class="quantity more">+</div>{% endcomment %}
-            {% comment %}<button type="submit" value="Submit">buy now</button>{% endcomment %}
-        {% comment %}</form>{% endcomment %}
-        {% comment %}<a href=""><img class="btn" src="./img/button_buy.png" alt="buy de lille wine"></a>{% endcomment %}
-    {% comment %}</div>{% endcomment %}
-{% comment %}</article>{% endcomment %}
+
 
