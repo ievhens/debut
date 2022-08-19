@@ -31,7 +31,7 @@
 .order-item img:nth-last-child(1){
     float: left;
 }
-.order-item table,
+.order-item-price,
 .order-item form{
     font-size: 18px;
 }
