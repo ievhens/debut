@@ -1,1 +1,0 @@
-document.getElementById("result").onclick = () => {console.log("hey!")}
