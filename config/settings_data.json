@@ -52,7 +52,6 @@
       },
       "slideshow": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "slideshow-0": {
             "type": "image",
@@ -71,11 +70,21 @@
               "subheading": "Tell your brand's story through video and images",
               "link": ""
             }
+          },
+          "e4f1b833-0a33-4930-8171-f039a5d178c3": {
+            "type": "image",
+            "settings": {
+              "alignment": "top",
+              "title": "Image slide",
+              "subheading": "Tell your brand's story through video and images",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "slideshow-0",
-          "slideshow-1"
+          "slideshow-1",
+          "e4f1b833-0a33-4930-8171-f039a5d178c3"
         ],
         "settings": {
           "autoplay": true,
@@ -97,7 +106,6 @@
       },
       "feature-row": {
         "type": "feature-row",
-        "disabled": true,
         "settings": {
           "layout": "left",
           "title": "Image with text",
@@ -117,11 +125,6 @@
       },
       "another": {
         "type": "another",
-        "settings": {
-        }
-      },
-      "166064210732ca6560": {
-        "type": "delille-info",
         "settings": {
         }
       },
@@ -228,6 +231,23 @@
           "title": "Collection list",
           "grid": 3
         }
+      },
+      "16611640119f549478": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Blog posts",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
+      },
+      "1661164018cd0ac996": {
+        "type": "gwa-cpu-section",
+        "settings": {
+          "product": "chaleur-estate-blanc"
+        }
       }
     },
     "content_for_index": [
@@ -235,9 +255,9 @@
       "1660645429c889b84b",
       "featured-collections",
       "feature-row",
-      "slideshow",
-      "166064210732ca6560",
-      "166082024987effed5"
+      "166082024987effed5",
+      "16611640119f549478",
+      "1661164018cd0ac996"
     ]
   },
   "presets": {
