@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="order-container white-transparent">
     <div class="order-item">
         {% comment %}<a class="grid-view-item__link grid-view-item__image-container product-card__link"{% endcomment %}
@@ -70,3 +71,77 @@
 
 
 
+=======
+<div class="order-container white-transparent">
+    <div class="order-item">
+        {% comment %}<a class="grid-view-item__link grid-view-item__image-container product-card__link"{% endcomment %}
+        {% comment %}href="{{ product.url | within: collection }}">{% endcomment %}
+        {% comment %}<span class="visually-hidden">{{ product.title }}</span>{% endcomment %}
+        {% comment %}</a>{% endcomment %}
+
+        {% comment %}{% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}{% endcomment %}
+        {% comment %}{% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}{% endcomment %}
+        {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        {% unless product.featured_image == blank %}
+            {% include 'image-style' with image: product.featured_image, width: max_height, height: max_height, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
+        {% endunless %}
+        <h3 class="" aria-hidden="true">{% cycle "Meet the", "Order Yours" %} {% cycle "2010", "2012" %} {{ product.title }} {% cycle "Today", "" %}!</h3>
+                <img id="{{ img_id }}"
+                     class="grid-view-item__image lazyload"
+                     src="{{ product.featured_image | img_url: '300x300' }}"
+                     data-src="{{ img_url }}"
+                     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+                     data-sizes="auto"
+                     alt="">
+        <p class="" aria-hidden="true"> {{ product.description }} </p>
+        <table class="order-item-price">
+            <tr>
+                <td colspan="3">price</td>
+            </tr>
+            <tr>
+                <td>bottle</td>
+                <td>/</td>
+                <td>case</td>
+            </tr>
+            <tr>
+                <td>{% include 'product-price' %}</td>
+                <td>/</td>
+                <td>{{ product.price | times: 12 | money}}</td>
+            </tr>
+        </table>
+        <form action="">
+            <label for="quantity1">qty</label>
+            <div class="quantity less">–</div>
+            <input type="number" id="quantity1" name="quantity" value="1" min="1" max="100"><br>
+            <div class="quantity more">+</div>
+            <button type="submit" value="Submit">buy now</button>
+        </form>
+        <a href=""><img class="order-item-btn" src="{{ 'button_buy.png' | asset_url }}" alt="buy de lille wine"></a>
+
+        <noscript>
+            {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
+            <img class="grid-view-item__image" src="{{ product.featured_image.src | img_url: image_size, scale: 2 }}"
+                 alt="{{ product.featured_image.alt }}"
+                 style="max-width: {{ max_height | times: product.featured_image.aspect_ratio }}px;">
+        </noscript>
+
+
+        <dl>
+            {% if section.settings.show_vendor %}
+                <div class="grid-view-item__vendor">
+                    <dt>
+                        <span class="visually-hidden">{{ 'products.product.vendor' | t }}</span>
+                    </dt>
+                    <dd>
+                        {{ product.vendor }}
+                    </dd>
+                </div>
+            {% endif %}
+        </dl>
+    </div>
+</div>
+
+
+
+>>>>>>> origin/main
