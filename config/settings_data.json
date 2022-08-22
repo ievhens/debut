@@ -245,19 +245,20 @@
       },
       "1661164018cd0ac996": {
         "type": "gwa-cpu-section",
+        "disabled": true,
         "settings": {
           "product": "chaleur-estate-blanc"
         }
       }
     },
     "content_for_index": [
+      "1661164018cd0ac996",
       "hero",
       "1660645429c889b84b",
       "featured-collections",
       "feature-row",
       "166082024987effed5",
-      "16611640119f549478",
-      "1661164018cd0ac996"
+      "16611640119f549478"
     ]
   },
   "presets": {
