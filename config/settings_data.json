@@ -93,17 +93,6 @@
           "text_size": "medium"
         }
       },
-      "featured-collections": {
-        "type": "collection",
-        "settings": {
-          "title": "Featured collection",
-          "collection": "top",
-          "grid": 3,
-          "rows": 2,
-          "show_vendor": false,
-          "show_view_all": false
-        }
-      },
       "feature-row": {
         "type": "feature-row",
         "settings": {
@@ -128,38 +117,6 @@
         "settings": {
         }
       },
-      "1660645429c889b84b": {
-        "type": "collection-list",
-        "blocks": {
-          "1660645429c889b84b-0": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "top"
-            }
-          },
-          "1660645429c889b84b-1": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "premium"
-            }
-          },
-          "1660645429c889b84b-2": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "m-series"
-            }
-          }
-        },
-        "block_order": [
-          "1660645429c889b84b-0",
-          "1660645429c889b84b-1",
-          "1660645429c889b84b-2"
-        ],
-        "settings": {
-          "title": "Collection list",
-          "grid": 3
-        }
-      },
       "product-template": {
         "type": "product-template",
         "settings": {
@@ -176,17 +133,6 @@
         "type": "cart-template",
         "settings": {
           "cart_notes_enable": false
-        }
-      },
-      "166082024987effed5": {
-        "type": "collection",
-        "settings": {
-          "title": "Featured collection",
-          "collection": "top",
-          "grid": 2,
-          "rows": 1,
-          "show_vendor": false,
-          "show_view_all": false
         }
       },
       "collection-delille": {
@@ -232,33 +178,16 @@
           "grid": 3
         }
       },
-      "16611640119f549478": {
-        "type": "featured-blog",
-        "settings": {
-          "title": "Blog posts",
-          "blog": "news",
-          "post_limit": 3,
-          "blog_show_author": false,
-          "blog_show_date": true,
-          "show_view_all": false
-        }
-      },
       "1661164018cd0ac996": {
         "type": "gwa-cpu-section",
-        "disabled": true,
         "settings": {
-          "product": "chaleur-estate-blanc"
+          "product": "samsung-galaxy-s21-fe-6-128gb"
         }
       }
     },
     "content_for_index": [
       "1661164018cd0ac996",
-      "hero",
-      "1660645429c889b84b",
-      "featured-collections",
-      "feature-row",
-      "166082024987effed5",
-      "16611640119f549478"
+      "hero"
     ]
   },
   "presets": {
