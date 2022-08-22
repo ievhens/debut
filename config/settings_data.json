@@ -196,6 +196,38 @@
           "show_vendor": false,
           "show_view_all": false
         }
+      },
+      "collection-list-delille": {
+        "type": "collection-list-delille",
+        "blocks": {
+          "9846c26e-5ef5-448f-9647-ecf736b05748": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "dellile-collection"
+            }
+          },
+          "2fed8493-7ab0-4684-b6f5-1d9d96df181b": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "doyenne-collection"
+            }
+          },
+          "4d45938c-f307-4589-9824-f095b86ba4a3": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "grand-ciel-collection"
+            }
+          }
+        },
+        "block_order": [
+          "9846c26e-5ef5-448f-9647-ecf736b05748",
+          "2fed8493-7ab0-4684-b6f5-1d9d96df181b",
+          "4d45938c-f307-4589-9824-f095b86ba4a3"
+        ],
+        "settings": {
+          "title": "Collection list",
+          "grid": 3
+        }
       }
     },
     "content_for_index": [
