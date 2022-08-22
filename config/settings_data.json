@@ -52,7 +52,6 @@
       },
       "slideshow": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "slideshow-0": {
             "type": "image",
@@ -71,11 +70,21 @@
               "subheading": "Tell your brand's story through video and images",
               "link": ""
             }
+          },
+          "e4f1b833-0a33-4930-8171-f039a5d178c3": {
+            "type": "image",
+            "settings": {
+              "alignment": "top",
+              "title": "Image slide",
+              "subheading": "Tell your brand's story through video and images",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "slideshow-0",
-          "slideshow-1"
+          "slideshow-1",
+          "e4f1b833-0a33-4930-8171-f039a5d178c3"
         ],
         "settings": {
           "autoplay": true,
@@ -84,20 +93,8 @@
           "text_size": "medium"
         }
       },
-      "featured-collections": {
-        "type": "collection",
-        "settings": {
-          "title": "Featured collection",
-          "collection": "top",
-          "grid": 3,
-          "rows": 2,
-          "show_vendor": false,
-          "show_view_all": false
-        }
-      },
       "feature-row": {
         "type": "feature-row",
-        "disabled": true,
         "settings": {
           "layout": "left",
           "title": "Image with text",
@@ -120,43 +117,6 @@
         "settings": {
         }
       },
-      "166064210732ca6560": {
-        "type": "delille-info",
-        "settings": {
-        }
-      },
-      "1660645429c889b84b": {
-        "type": "collection-list",
-        "blocks": {
-          "1660645429c889b84b-0": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "top"
-            }
-          },
-          "1660645429c889b84b-1": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "premium"
-            }
-          },
-          "1660645429c889b84b-2": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "m-series"
-            }
-          }
-        },
-        "block_order": [
-          "1660645429c889b84b-0",
-          "1660645429c889b84b-1",
-          "1660645429c889b84b-2"
-        ],
-        "settings": {
-          "title": "Collection list",
-          "grid": 3
-        }
-      },
       "product-template": {
         "type": "product-template",
         "settings": {
@@ -175,37 +135,59 @@
           "cart_notes_enable": false
         }
       },
-      "166082024987effed5": {
-        "type": "collection",
+      "collection-delille": {
+        "type": "collection-delille",
         "settings": {
           "title": "Featured collection",
-          "collection": "top",
+          "collection": "de-lille-cellars",
           "grid": 2,
           "rows": 1,
           "show_vendor": false,
           "show_view_all": false
         }
       },
-      "collection-delille": {
-        "type": "collection-delille",
+      "collection-list-delille": {
+        "type": "collection-list-delille",
+        "blocks": {
+          "9846c26e-5ef5-448f-9647-ecf736b05748": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "dellile-collection"
+            }
+          },
+          "2fed8493-7ab0-4684-b6f5-1d9d96df181b": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "doyenne-collection"
+            }
+          },
+          "4d45938c-f307-4589-9824-f095b86ba4a3": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "grand-ciel-collection"
+            }
+          }
+        },
+        "block_order": [
+          "9846c26e-5ef5-448f-9647-ecf736b05748",
+          "2fed8493-7ab0-4684-b6f5-1d9d96df181b",
+          "4d45938c-f307-4589-9824-f095b86ba4a3"
+        ],
         "settings": {
-          "title": "Featured collection",
-          "collection": "",
-          "grid": 2,
-          "rows": 1,
-          "show_vendor": false,
-          "show_view_all": false
+          "title": "Collection list",
+          "grid": 3
+        }
+      },
+      "1661164018cd0ac996": {
+        "type": "gwa-cpu-section",
+        "settings": {
+          "product": "samsung-galaxy-s21-fe-6-128gb"
         }
       }
     },
     "content_for_index": [
-      "hero",
-      "1660645429c889b84b",
-      "featured-collections",
-      "feature-row",
-      "slideshow",
-      "166064210732ca6560",
-      "166082024987effed5"
+      "1661164018cd0ac996",
+      "hero"
     ]
   },
   "presets": {
