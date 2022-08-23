@@ -21,7 +21,7 @@
             {% for block in section.blocks limit: section.blocks.size %}
                 <div class="grid__item {{ grid_item_width }}" {{ block.shopify_attributes }}>
                     {%- assign collection = collections[block.settings.collection] -%}
-                    {% include collection-item-delille' %}
+                    {% include 'delille-collection-grid-item' %}
                 </div>
             {% endfor %}
         </div>
