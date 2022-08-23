@@ -426,6 +426,19 @@ $font-stack-cart-notification: "HelveticaNeue", "Helvetica Neue", Helvetica, Ari
 
 $font-size-mobile-input: 16px; // min 16px to prevent zooming
 
+@font-face {
+  font-family: "High Tower Text";
+  src: url({{ "HighTowerText.ttf" |  asset_url }});
+}
+/* @font-face {
+    font-family: "Myriad Pro";
+    src: url({{ "MyriadProRegular.ttf" |  asset_url }});
+} */
+@font-face {
+  font-family: "Neutra Text";
+  src: url({{ "NeutraTextBook.otf" |  asset_url }});
+}
+
 /*================ Gift Cards ================*/
 $color-giftcard-tooltip-fallback: #333;
 $color-giftcard-light: #fff;
@@ -6003,5 +6016,38 @@ $toolbar-height-small: 46px;
   bottom: 0;
   left: 0;
   z-index: 2;
+}
+
+/*=====================================================*/
+/*================   De Lille Cellars  ================*/
+/*=====================================================*/
+
+.centered{
+  font-family: "High Tower Text";
+  width: 960px;
+  margin: 0 auto;
+  display: table;
+}
+.white-transparent{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 11px 24px 2px rgba(0, 1, 1, 0.45);
+}
+.top-margined{
+  margin-top: 50px;
+}
+
+/*================ Collections Section ================*/
+
+
+.partners{
+  box-sizing: border-box;
+}
+.partners h2{
+  font-size: 60px;
+  font-weight: 200;
+  word-spacing: -6px;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin: 17px 0 40px 0;
 }
 
