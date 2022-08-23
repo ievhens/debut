@@ -214,6 +214,16 @@
         "default": "Google_Work+Sans_600_sans",
         "options": [
           {
+            "value": "High Tower Text",
+            "label": "High Tower Text",
+            "group": "delille"
+          },
+          {
+            "value": "Neutra Text",
+            "label": "Neutra Text",
+            "group": "delille"
+          },
+          {
             "value": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
             "label": "Avant Garde",
             "group": "Sans-serif"
