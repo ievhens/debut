@@ -1,0 +1,91 @@
+<div class="info-block">
+  {{ section.settings.visit_image | img_url: "500x500" | img_tag: "visit us", "info-img" }}
+  <h3>{{ section.settings.visit_title }}</h3>
+</div>
+<div class="info-block">
+    {% form 'create_customer' %}
+      <fieldset>
+        <legend>{{ section.settings.form-title }}</legend>
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" value="" placeholder="{{ section.settings.name_placeholder }}"><br>
+        <label for="mail">email address</label><br>
+        <input type="email" id="mail" name="mail" value="" placeholder="{{ section.settings.mail_placeholder }}" required>
+      </fieldset>
+    {% endform %}
+  <h3>{{ section.settings.subscribe_title }}</h3>
+</div>
+<div class="info-block">
+  {{ section.settings.shipping_image | img_url: "500x500" | img_tag: "shipping", "info-img" }}
+  <h3>{{ section.settings.shipping_title }}</h3>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "d Info section",
+  "class": "info centered white-transparent top-margined",
+  "settings": [
+    {
+      "type": "text",
+      "id": "visit_title",
+      "label": "Visit",
+      "default": "visit us"
+    },
+    {
+      "type": "image_picker",
+      "id": "visit_image",
+      "label": "Visit image"
+    },
+    {
+      "type": "text",
+      "id": "shipping_title",
+      "label": "Shipping",
+      "default": "shipping"
+    },
+    {
+      "type": "image_picker",
+      "id": "shipping_image",
+      "label": "Shipping image"
+    },
+    {
+      "type": "text",
+      "id": "subscribe_title",
+      "label": "Subscribe",
+      "default": "mailing list"
+    },
+    {
+      "type": "text",
+      "id": "name_placeholder",
+      "label": "Name placeholder",
+      "default": "Your name"
+    },
+    {
+      "type": "text",
+      "id": "mail_placeholder",
+      "label": "Mail placeholder",
+      "default": "example@mail.com"
+    },
+    {
+      "type": "text",
+      "id": "form-title",
+      "label": "Form Title",
+      "default": "Sign Up!"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "d info section",
+        "de": "Kategorien-Liste",
+        "fr": "Page de liste des collections"
+      },
+      "category": {
+        "en": "info",
+        "de": "info",
+        "fr": "info"
+      }
+    }
+  ]
+}
+{% endschema %}

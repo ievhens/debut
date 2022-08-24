@@ -6061,11 +6061,73 @@ $toolbar-height-small: 46px;
   opacity: 0;
 }
 
+/*================ Info Section ================*/
+
+.info{
+  padding-top: 35px;
+}
+.info > div{
+  width: 300px;
+  float: left;
+}
+.info img, .info form{
+  display: block; /* image center align */
+  width: 240px;
+  margin: 0 auto;
+}
+.info img{
+  border: 1px solid rgb(75, 75, 75);
+}
+.info form{
+  width: 242px;
+  font-size: 18px;
+  line-height: 1.1em;
+  box-sizing: border-box;
+  padding: 0 15px 20px;
+  background-color: rgb(233, 232, 232);
+}
+.info fieldset{
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-transform: capitalize;
+}
+.info legend{
+  text-align: center;
+}
+.info label{
+  display: inline-block;
+  margin: 5px 0;
+}
+.info input{
+  width: 190px;
+  height: 30px;
+  font-family: "High Tower Text";
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  box-shadow: inset 1px 1px 5px 0px rgba(0, 1, 1, 0.23);
+}
+.info input::placeholder{
+  color:rgb(175, 175, 175)
+}
+.info input:focus{
+  outline: 1px solid lightgrey;;
+}
+.info h3{
+  margin: 17px auto 35px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
 @media (min-width: 961px) and (max-width: 1200px){
 
   .centered{width: 900px;}
 
-  /* Parnters section */
+  /* Partners section */
   .partners h2{font-size: 56px;}
 
 }
@@ -6079,8 +6141,6 @@ $toolbar-height-small: 46px;
 
 }
 
-
-
 @media (min-width: 769px) and (max-width: 960px){
 
   /* Partners section */
@@ -6088,10 +6148,15 @@ $toolbar-height-small: 46px;
   .partner{width: 32%;}
   .partner:nth-of-type(2){margin: 0 2%;}
 
+  /* Info section (Sign-Up, Visit, Shipping) */
+  .info > div{width: 33.33%;}
+  .info h3{margin: 17px auto; font-size: 30px;}
+
 }
 
 @media (max-width: 768px){
-
+  /* Info section (Sign-Up, Visit, Shipping) */
+  .info > div{width: 100%;}
 }
 
 
