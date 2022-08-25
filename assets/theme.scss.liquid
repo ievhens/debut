@@ -6035,8 +6035,81 @@ $toolbar-height-small: 46px;
 .top-margined{
   margin-top: 50px;
 }
+/*================ delille Featured Collection ================*/
 
-/*================ Collections Section ================*/
+.grid__item_delille{
+  width: 430px;
+  color: white;
+  padding: 20px;
+}
+.product-card-delille{
+  background-color: rgb(45, 45, 45);
+}
+
+.grid__item_delille:nth-child(odd){
+  float: left;
+}
+.grid__item_delille:nth-child(even){
+  float: right;
+}
+
+.grid-view-item__title__delille{
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 1em 0;
+}
+.grid-view-item__description{
+  font: 14px/24px "Neutra Text";
+  margin: 10px auto 20px;
+  padding: 0 10px;
+  color: white;
+}
+.grid-view-item__buy-info{
+  display: table;
+  margin-left: -35px;
+}
+.grid-view-item__buy-info__item{
+  float: left;
+  margin-left: 45px;
+}
+.grid-view-item__buy-info__item td{
+  padding: 2px;
+  border: none;
+  text-transform: capitalize;
+}
+.grid-view-item__buy-info__item form{
+  font-family: "Neutra Text";
+  text-transform: uppercase;
+}
+.grid-view-item__buy-info__item form label{
+  display: inline;
+}
+.grid-view-item__buy-info__item form input{
+  width: 40px;
+  height: 30px;
+  padding: 0 0 0 15px;
+  margin: 0 0 20px 10px;
+  border: none;
+  box-shadow: inset 1px 2px 5px 0px rgba(0, 1, 1, 0.2);
+}
+.grid-view-item__buy-info__item [type=number]::-webkit-inner-spin-button,
+.grid-view-item__buy-info__item [type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.grid-view-item__buy-info__item .quantity{
+  display: none;
+}
+.grid-view-item__buy-info__item form button{
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  background-color: rgb(45, 45, 45);
+}
+
+/*================ delille Collections Section ================*/
 
 
 .partners{
@@ -6061,7 +6134,7 @@ $toolbar-height-small: 46px;
   opacity: 0;
 }
 
-/*================ Info Section ================*/
+/*================ delille Info Section ================*/
 
 .info{
   padding-top: 35px;
