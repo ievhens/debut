@@ -1,8 +1,8 @@
-<div class="info-block">
+<div class="delille-info-block">
   {{ section.settings.visit_image | img_url: "500x500" | img_tag: "visit us", "info-img" }}
   <h3>{{ section.settings.visit_title }}</h3>
 </div>
-<div class="info-block">
+<div class="delille-info-block">
     {% form 'create_customer' %}
       <fieldset>
         <legend>{{ section.settings.form-title }}</legend>
@@ -14,7 +14,7 @@
     {% endform %}
   <h3>{{ section.settings.subscribe_title }}</h3>
 </div>
-<div class="info-block">
+<div class="delille-info-block">
   {{ section.settings.shipping_image | img_url: "500x500" | img_tag: "shipping", "info-img" }}
   <h3>{{ section.settings.shipping_title }}</h3>
 </div>
@@ -24,7 +24,7 @@
 {% schema %}
 {
   "name": "d Info section",
-  "class": "info centered white-transparent top-margined",
+  "class": "delille-info centered white-transparent top-margined",
   "settings": [
     {
       "type": "text",

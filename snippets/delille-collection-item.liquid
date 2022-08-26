@@ -1,0 +1,5 @@
+<div class="delille-collection-list-item">
+    <div class="delille-collection-list-item__bg" style="background-image: url('{{ collection.image | img_url: '500x500' }}')">
+        <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="delille-collection-list-item__link"></a>
+    </div>
+</div>

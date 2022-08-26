@@ -6068,11 +6068,11 @@ $toolbar-height-small: 46px;
 }
 .grid-view-item__buy-info{
   display: table;
-  margin-left: -35px;
+  margin-left: 5px;
 }
 .grid-view-item__buy-info__item{
   float: left;
-  margin-left: 45px;
+  margin-left: 15px;
 }
 .grid-view-item__buy-info__item td{
   padding: 2px;
@@ -6111,47 +6111,53 @@ $toolbar-height-small: 46px;
 
 /*================ delille Collections Section ================*/
 
-
-.partners{
-  box-sizing: border-box;
+.delille-collection-list{
+  padding: 0 0 35px 0;
 }
-.partners h2{
+.delille-collection-list__title{
   text-align: center;
   font-size: 60px;
   font-weight: 200;
-  word-spacing: -6px;
   text-transform: uppercase;
-  line-height: 40px;
-  margin: 17px 0 40px 0;
+  line-height: 80px;
   letter-spacing: 0;
+  margin: 0;
 }
-.partners .collection-grid{
-  width: 92%;
-  margin: 0 auto;
+.delille-collection-list__container{
+  margin-left: 35px;
 }
-
-.partners .collection-grid-item__title-wrapper{
-  opacity: 0;
+.delille-collection-list-item{
+  float: left;
+  width: 33.33%;
+}
+.delille-collection-list-item__link{
+  display: block;
+  height: 100%;
+}
+.delille-collection-list-item__bg{
+  width: 270px;
+  height: 270px;
 }
 
 /*================ delille Info Section ================*/
 
-.info{
+.delille-info{
   padding-top: 35px;
+  display: table;
 }
-.info > div{
-  width: 300px;
+.delille-info-block{
+  width: 320px;
   float: left;
 }
-.info img, .info form{
+.info-img, .delille-info form{
   display: block; /* image center align */
   width: 240px;
   margin: 0 auto;
 }
-.info img{
+.info-img{
   border: 1px solid rgb(75, 75, 75);
 }
-.info form{
+.delille-info form{
   width: 242px;
   font-size: 18px;
   line-height: 1.1em;
@@ -6159,20 +6165,20 @@ $toolbar-height-small: 46px;
   padding: 0 15px 20px;
   background-color: rgb(233, 232, 232);
 }
-.info fieldset{
+.delille-info fieldset{
   margin: 0;
   padding: 0;
   border: none;
   text-transform: capitalize;
 }
-.info legend{
+.delille-info legend{
   text-align: center;
 }
-.info label{
+.delille-info label{
   display: inline-block;
   margin: 5px 0;
 }
-.info input{
+.delille-info input{
   width: 190px;
   height: 30px;
   font-family: "High Tower Text";
@@ -6181,13 +6187,13 @@ $toolbar-height-small: 46px;
   border: none;
   box-shadow: inset 1px 1px 5px 0px rgba(0, 1, 1, 0.23);
 }
-.info input::placeholder{
+.delille-info input::placeholder{
   color:rgb(175, 175, 175)
 }
-.info input:focus{
+.delille-info input:focus{
   outline: 1px solid lightgrey;;
 }
-.info h3{
+.delille-info h3{
   margin: 17px auto 35px;
   text-align: center;
   text-transform: uppercase;
@@ -6197,6 +6203,8 @@ $toolbar-height-small: 46px;
 }
 
 @media (min-width: 961px) and (max-width: 1200px){
+
+  .info-block{ width: 300px;}
 
   .centered{width: 900px;}
 
