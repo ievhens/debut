@@ -1,0 +1,176 @@
+<div class="dellile-header-container centered">
+    <a href="#">{{ "logo_header_delille.png" | asset_url | img_tag }}</a>
+    <div class="burger">
+        <span></span>
+    </div>
+    <nav class="main-nav">
+        <ul class="authorize">
+            <li class="authorize-item"><a href="#">login</a></li>
+            <li class="authorize-item">|</li>
+            <li class="authorize-item"><a href="#">cart</a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">home</a></li>
+            <li class="menu-item"><a href="#">winery</a></li>
+            <li class="menu-item"><a href="#">our wine</a></li>
+            <li class="menu-item"><a href="#">wine club</a></li>
+            <li class="menu-item"><a href="#">events</a></li>
+        </ul>
+    </nav>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Header",
+    "de": "Titel",
+    "fr": "En-tête"
+  },
+  "settings": [
+    {
+      "type": "radio",
+      "id": "align_logo",
+      "label": {
+        "en": "Logo alignment",
+        "de": "Logo-Ausrichtung",
+        "fr": "Alignement du logo"
+      },
+      "default": "left",
+      "options": [
+        {"value": "left", "label": { "en": "Left", "de": "Links", "fr": "Gauche" }},
+        {"value": "center", "label": { "en": "Centered", "de": "Mittig", "fr": "Centré" }}
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": {
+        "en": "Logo image",
+        "de": "Logo-Foto",
+        "fr": "Image du logo"
+      }
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": {
+        "en": "Custom logo width",
+        "de": "Logobreite",
+        "fr": "Largeur personnalisée du logo"
+      },
+      "min": 50,
+      "max": 250,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "en": "Menu",
+        "de": "Menü",
+        "fr": "Menu"
+      },
+      "default": "main-menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "home_page_only",
+      "label": {
+        "en": "Home page only",
+        "de": "Nur Startseite",
+        "fr": "Page d'accueil uniquement"
+      },
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "message_text",
+      "label": {
+        "en": "Text",
+        "de": "Text",
+        "fr": "Texte"
+      },
+      "default": {
+        "en": "Announce something here",
+        "de": "Hier etwas ankündigen",
+        "fr": "Annoncez quelque chose ici"
+      }
+    },
+    {
+      "type": "url",
+      "id": "message_link",
+      "label": {
+        "en": "Link",
+        "de": "Link",
+        "fr": "Lien"
+      },
+      "info": {
+        "en": "Optional",
+        "de": "Optional",
+        "fr": "Facultatif"
+      }
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": {
+        "en": "Bar",
+        "de": "Zeile",
+        "fr": "Barre"
+      },
+      "default": "#7796a8"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": {
+        "en": "Text",
+        "de": "Text",
+        "fr": "Texte"
+      },
+      "default": "#fff"
+    }
+  ]
+}
+{% endschema %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name }}",
+  {% if section.settings.logo %}
+{% assign image_size = section.settings.logo.width | append:'x' %}
+    "logo": "https:{{ section.settings.logo | img_url: image_size }}",
+  {% endif %}
+  "sameAs": [
+    "{{ settings.social_twitter_link }}",
+    "{{ settings.social_facebook_link }}",
+    "{{ settings.social_pinterest_link }}",
+    "{{ settings.social_instagram_link }}",
+    "{{ settings.social_tumblr_link }}",
+    "{{ settings.social_snapchat_link }}",
+    "{{ settings.social_youtube_link }}",
+    "{{ settings.social_vimeo_link }}"
+  ],
+  "url": "{{ shop.url }}{{ page.url }}"
+}
+</script>
+
+{% if template.name == 'index' %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ shop.name }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "{{ shop.url }}{{ page.url }}"
+    }
+  </script>
+{% endif %}
