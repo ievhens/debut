@@ -1,0 +1,94 @@
+<footer class="delille-footer top-margined">
+    <div class="footer-container centered">
+        <nav class="about-us">
+            <h4>{{ section.settings.menu_title }}</h4>
+            <hr class="footer-hr">
+            <ul class="menu">
+                {% for link in linklists.delille-footer.links %}
+                    <li>{{ link.title | link_to: link.url }}</li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <nav class="contacts">
+            <h4>{{ section.settings.contacts_title }}</h4>
+            <hr class="footer-hr">
+            <div class="mail">
+                <a href="mailto:{{- shop.email -}}?subject=From delillecellars.com">{{- shop.email -}}</a>
+            </div>
+            <div class="phone">
+                <a href="tel:{{- shop.phone -}}">{{- shop.phone -}}</a>
+            </div>
+        </nav>
+        <nav class="social-media">
+            <h4>{{ section.settings.social_title }}</h4>
+            <hr class="footer-hr">
+            <ul>
+                <li>
+                    <a href="#"><img src="{{ "logo_footer_facebook.png" | asset_url }}" alt="delillecellars facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="{{ "logo_footer_twitter.png" | asset_url }}" alt="delillecellars twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="{{ "logo_footer_pinterest.png" | asset_url }}" alt="delillecellars pinterest"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+{% schema %}
+{
+  "name": {
+    "en": "delille Footer",
+    "de": "Fußzeile",
+    "fr": "Pied de page"
+  },
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "footer_linklist",
+      "label": "Footer menu",
+      "default": "footer",
+      "info": {
+        "en": "This menu won't show dropdown items",
+        "de": "Dieses Menü zeigt keine Dropdowns an",
+        "fr": "Ce menu n'affichera pas les éléments des menus déroulants"
+      }
+    },
+    {
+      "type": "link_list",
+      "id": "footer_linklist_two",
+      "label": {
+        "en": "Additional menu",
+        "de": "Extra Menü",
+        "fr": "Menu supplémentaire"
+      },
+      "default": "main-menu",
+      "info": {
+        "en": "This menu won't show dropdown items",
+        "de": "Dieses Menü zeigt keine Dropdowns an",
+        "fr": "Ce menu n'affichera pas les éléments des menus déroulants"
+      }
+    },
+    {
+      "type": "text",
+      "id": "menu_title",
+      "label": "Menu title",
+      "default": "About Us"
+    },
+    {
+      "type": "text",
+      "id": "contacts_title",
+      "label": "Contacts title",
+      "default": "Get in Touch"
+    },
+    {
+      "type": "text",
+      "id": "social_title",
+      "label": "Social title",
+      "default": "Keep up with us Online"
+    }
+  ]
+}
+{% endschema %}

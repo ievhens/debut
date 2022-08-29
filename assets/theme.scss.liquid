@@ -6036,6 +6036,8 @@ $toolbar-height-small: 46px;
   margin-top: 50px;
 }
 
+/*================ delille Header ================*/
+
 header{
   position: absolute;
   width: 100%;
@@ -6239,6 +6241,69 @@ header .logo{
   margin-top: -10px;
 }
 
+/*================ delille Footer ================*/
+
+.delille-footer{
+  background-color: rgb(45, 45, 45);
+  padding: 35px 0 100px 0;
+  color: white;
+  overflow: auto;
+  font-family: "Neutra Text";
+}
+.delille-footer ul{
+  margin: 0;
+  padding: 0;
+}
+.delille-footer nav{
+  width: 210px;
+  float: left;
+  font-family: "Neutra Text";
+}
+delille-footer h4{
+  font-size: 18px;
+  margin: 0;
+  font-family: "Neutra Text";
+}
+.delille-footer hr.footer-hr{
+  margin: 7px 0;
+}
+.delille-footer li{
+  list-style-type: none;
+  line-height: 1.5;
+}
+.about-us{
+  text-transform: capitalize;
+}
+.menu{}
+.contacts{
+  margin: 0 165px;
+}
+.delille-footer .contacts div{
+  height: 45px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  line-height: 43px;
+}
+.mail{
+  background-image: url({{ "contacts_mail.png" | asset_url }});
+}
+.phone{
+  background-image: url({{  "contacts_phone.png" | asset_url }});
+}
+.delille-footer .social-media li{
+  display: inline-block;
+  margin-top: 20px;
+}
+.delille-footer .social-media li:nth-child(2){
+  margin: 0 20px;
+}
+.delille-footer a{
+  color: white;
+  text-decoration: none;
+}
+.delille-footer a:hover{
+  text-decoration: underline;
+}
 
 @media (min-width: 961px) and (max-width: 1200px){
 

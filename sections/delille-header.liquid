@@ -6,7 +6,7 @@
         </div>
         <nav class="main-nav">
             <ul class="delille-authorize">
-                <li class="authorize-item">
+                <li class="authorize-item login">
                     {% if customer %}
                         <a href="/account">
                             {% include 'icon-login' %}
@@ -17,13 +17,11 @@
                     {% endif %}
                 </li>
                 <li class="authorize-item">|</li>
-                <li class="authorize-item">
+                <li class="authorize-item cart">
                     <a href="/cart">
-                        {{ section.settings.cart_text }}<span>({{ cart.item_count }})</span>
+                        {{ section.settings.cart_text }}
                         {% if cart.item_count > 0 %}
-                            <div>
                                 <span>({{ cart.item_count }})</span>
-                            </div>
                         {% endif %}
                     </a>
                 </li>
@@ -68,20 +66,6 @@
       }
     },
     {
-      "type": "range",
-      "id": "logo_max_width",
-      "label": {
-        "en": "Custom logo width",
-        "de": "Logobreite",
-        "fr": "Largeur personnalisée du logo"
-      },
-      "min": 50,
-      "max": 250,
-      "step": 5,
-      "unit": "px",
-      "default": 100
-    },
-    {
       "type": "link_list",
       "id": "main_linklist",
       "label": {
@@ -104,42 +88,3 @@
   ]
 }
 {% endschema %}
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "{{ shop.name }}",
-  {% if section.settings.logo %}
-{% assign image_size = section.settings.logo.width | append:'x' %}
-    "logo": "https:{{ section.settings.logo | img_url: image_size }}",
-  {% endif %}
-  "sameAs": [
-    "{{ settings.social_twitter_link }}",
-    "{{ settings.social_facebook_link }}",
-    "{{ settings.social_pinterest_link }}",
-    "{{ settings.social_instagram_link }}",
-    "{{ settings.social_tumblr_link }}",
-    "{{ settings.social_snapchat_link }}",
-    "{{ settings.social_youtube_link }}",
-    "{{ settings.social_vimeo_link }}"
-  ],
-  "url": "{{ shop.url }}{{ page.url }}"
-}
-</script>
-
-{% if template.name == 'index' %}
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "{{ shop.name }}",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{{ shop.url }}/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "url": "{{ shop.url }}{{ page.url }}"
-    }
-  </script>
-{% endif %}
