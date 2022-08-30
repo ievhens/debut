@@ -144,11 +144,44 @@
           "mail_placeholder": "example@mail.com",
           "form-title": "Sign Up!"
         }
+      },
+      "1661872446c7d726cd": {
+        "type": "delille-collection-list",
+        "blocks": {
+          "1661872446c7d726cd-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "dellile-collection"
+            }
+          },
+          "1661872446c7d726cd-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1661872446c7d726cd-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1661872446c7d726cd-0",
+          "1661872446c7d726cd-1",
+          "1661872446c7d726cd-2"
+        ],
+        "settings": {
+          "title": "discover the collection",
+          "grid": 3
+        }
       }
     },
     "content_for_index": [
       "166187238693077106",
-      "16618724107186737d"
+      "16618724107186737d",
+      "1661872446c7d726cd"
     ]
   },
   "presets": {
