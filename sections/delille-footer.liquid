@@ -1,7 +1,7 @@
-<footer class="delille-footer top-margined">
+<footer class="top-margined">
     <div class="footer-container centered">
-        <nav class="about-us">
-            <h4>{{ section.settings.menu_title }}</h4>
+        <nav class="footer-nav about-us">
+            <h4 class="nav-title">{{ section.settings.menu_title }}</h4>
             <hr class="footer-hr">
             <ul class="menu">
                 {% for link in linklists.delille-footer.links %}
@@ -9,8 +9,8 @@
                 {% endfor %}
             </ul>
         </nav>
-        <nav class="contacts">
-            <h4>{{ section.settings.contacts_title }}</h4>
+        <nav class="footer-nav contacts">
+            <h4 class="nav-title">{{ section.settings.contacts_title }}</h4>
             <hr class="footer-hr">
             <div class="mail">
                 <a href="mailto:{{- shop.email -}}?subject=From delillecellars.com">{{- shop.email -}}</a>
@@ -19,8 +19,8 @@
                 <a href="tel:{{- shop.phone -}}">{{- shop.phone -}}</a>
             </div>
         </nav>
-        <nav class="social-media">
-            <h4>{{ section.settings.social_title }}</h4>
+        <nav class="footer-nav social-media">
+            <h4 class="nav-title">{{ section.settings.social_title }}</h4>
             <hr class="footer-hr">
             <ul>
                 <li>
@@ -44,6 +44,7 @@
     "de": "Fußzeile",
     "fr": "Pied de page"
   },
+  "class": "delille-footer",
   "settings": [
     {
       "type": "link_list",

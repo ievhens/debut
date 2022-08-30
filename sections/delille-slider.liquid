@@ -1,0 +1,37 @@
+{% for block in section.blocks %}
+  {{ block.settings.image | img_url: "1200x1200" | img_tag }}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "delille-slider",
+  "class": "slider centered white-transparent",
+  "blocks": [
+    {
+      "type": "image_picker",
+      "name": "Slider image",
+      "settings": [
+        {
+          "label": "Slider image",
+          "id": "image",
+          "type": "image_picker"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Image",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "image_picker"
+        },
+        {
+          "type": "image_picker"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

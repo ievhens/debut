@@ -70,7 +70,9 @@
 
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
-
+  <script src="{{ "jquery-3.6.0.min.js" | asset_url }}"></script>
+  <script src="{{ "jquery.imgpreload.min.js" | asset_url }}"></script>
+  <script src="{{ "jquery.simple-fading-slider.js" | asset_url }}"></script>
   {{ content_for_header }}
 </head>
 
@@ -78,12 +80,11 @@
 
   {% section 'delille-header' %}
   <div class="page-container" id="PageContainer">
-
     <main class="main-content" id="MainContent" role="main">
       {{ content_for_layout }}
     </main>
-
   </div>
-  {% section 'footer' %}
+  {% section 'delille-footer' %}
 </body>
+<script src="{{ "delille.js" | asset_url }}"></script>
 </html>

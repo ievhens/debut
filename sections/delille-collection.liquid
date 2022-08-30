@@ -1,9 +1,9 @@
 {%- assign collection = collections[section.settings.collection] -%}
-{%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
+{%- assign product_limit = 2 | times: section.settings.rows -%}
 
 {% for product in collection.products limit: product_limit %}
     <article class="delille-featured-collection-item white-transparent top-margined">
-        {% include 'delille-product-card', max_height: max_height %}
+        {% include 'delille-product-card' %}
     </article>
 {% endfor %}
 
@@ -20,19 +20,6 @@
         "de": "Kategorie",
         "fr": "Collection"
       }
-    },
-    {
-      "type": "range",
-      "id": "grid",
-      "label": {
-        "en": "Products per row",
-        "de": "Produkte per Reihe",
-        "fr": "Produits par rangée"
-      },
-      "min": 2,
-      "max": 5,
-      "step": 1,
-      "default": 2
     },
     {
       "type": "range",
