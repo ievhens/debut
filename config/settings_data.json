@@ -73,17 +73,6 @@
           "text_size": "medium"
         }
       },
-      "featured-collections": {
-        "type": "collection",
-        "settings": {
-          "title": "Featured collection",
-          "collection": "frontpage",
-          "grid": 3,
-          "rows": 2,
-          "show_vendor": false,
-          "show_view_all": false
-        }
-      },
       "feature-row": {
         "type": "feature-row",
         "settings": {
@@ -122,10 +111,7 @@
       }
     },
     "content_for_index": [
-      "hero",
-      "featured-collections",
-      "feature-row",
-      "slideshow"
+
     ]
   },
   "presets": {
