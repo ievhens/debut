@@ -14,7 +14,7 @@
     "color_image_overlay": "#3d4246",
     "image_overlay_opacity": 25,
     "color_body_bg": "#fff",
-    "type_header_family": "Google_Work+Sans_600_sans",
+    "type_header_family": "High Tower Text",
     "type_header_base_size": 26,
     "type_base_family": "Google_Work+Sans_400_sans",
     "type_base_size": 16,
@@ -157,13 +157,13 @@
           "1661872446c7d726cd-1": {
             "type": "featured_collection",
             "settings": {
-              "collection": ""
+              "collection": "doyenne-collection"
             }
           },
           "1661872446c7d726cd-2": {
             "type": "featured_collection",
             "settings": {
-              "collection": ""
+              "collection": "grand-ciel-collection"
             }
           }
         },
@@ -176,11 +176,21 @@
           "title": "discover the collection",
           "grid": 3
         }
+      },
+      "16618724945685e956": {
+        "type": "delille-collection",
+        "settings": {
+          "collection": "dellile-collection",
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
       "166187238693077106",
       "16618724107186737d",
+      "16618724945685e956",
       "1661872446c7d726cd"
     ]
   },
