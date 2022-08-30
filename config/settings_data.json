@@ -25,12 +25,19 @@
     "sections": {
       "header": {
         "type": "header",
-        "settings": { }
+        "settings": {
+        }
       },
       "hero": {
         "type": "hero",
         "settings": {
-          "text_size": "large"
+          "alignment": "center",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "hero_size": "medium",
+          "text_size": "large",
+          "button_label": "",
+          "button_link": ""
         }
       },
       "slideshow": {
@@ -38,33 +45,79 @@
         "blocks": {
           "slideshow-0": {
             "type": "image",
-            "settings": { }
+            "settings": {
+              "alignment": "top",
+              "title": "Image slide",
+              "subheading": "Tell your brand's story through video and images",
+              "link": ""
+            }
           },
           "slideshow-1": {
             "type": "image",
-            "settings": { }
+            "settings": {
+              "alignment": "top",
+              "title": "Image slide",
+              "subheading": "Tell your brand's story through video and images",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "slideshow-0",
           "slideshow-1"
         ],
-        "settings": { }
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": 7,
+          "slideshow_height": "small",
+          "text_size": "medium"
+        }
       },
       "featured-collections": {
         "type": "collection",
         "settings": {
-          "collection": "frontpage"
+          "title": "Featured collection",
+          "collection": "frontpage",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
         }
       },
       "feature-row": {
         "type": "feature-row",
-        "settings": { }
+        "settings": {
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       },
       "footer": {
         "type": "footer",
         "settings": {
           "footer_linklist_two": ""
+        }
+      },
+      "delille-header": {
+        "type": "delille-header",
+        "settings": {
+          "login_text": "login",
+          "cart_text": "cart",
+          "logo": "shopify:\/\/shop_images\/logo_header_delille.png",
+          "main_linklist": "main-menu",
+          "home_page_only": true
+        }
+      },
+      "delille-footer": {
+        "type": "delille-footer",
+        "settings": {
+          "footer_linklist": "footer",
+          "footer_linklist_two": "main-menu",
+          "menu_title": "About Us",
+          "contacts_title": "Get in Touch",
+          "social_title": "Keep up with us Online"
         }
       }
     },
@@ -102,7 +155,8 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": { }
+          "settings": {
+          }
         },
         "hero": {
           "type": "hero",
@@ -115,18 +169,21 @@
           "blocks": {
             "slideshow-0": {
               "type": "image",
-              "settings": { }
+              "settings": {
+              }
             },
             "slideshow-1": {
               "type": "image",
-              "settings": { }
+              "settings": {
+              }
             }
           },
           "block_order": [
             "slideshow-0",
             "slideshow-1"
           ],
-          "settings": { }
+          "settings": {
+          }
         },
         "featured-collections": {
           "type": "collection",
@@ -136,7 +193,8 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": { }
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
@@ -291,20 +349,23 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": { }
+          "settings": {
+          }
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": { }
+              "settings": {
+              }
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": { }
+          "settings": {
+          }
         },
         "1492033924902": {
           "type": "custom-content",
@@ -330,15 +391,18 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": { }
+              "settings": {
+              }
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": { }
+              "settings": {
+              }
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": { }
+              "settings": {
+              }
             }
           },
           "block_order": [
