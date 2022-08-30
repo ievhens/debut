@@ -74,3 +74,5 @@
 
 }(jQuery))
 
+console.log("fade-slider-plugin-loaded")
+

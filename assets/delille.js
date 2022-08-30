@@ -7,6 +7,9 @@ $(document).ready(function(){
         "hoverStop": true});
 });
 
+
+
+
 document.querySelector(".burger").onclick = function() {
 document.getElementById("mobile-menu").classList.toggle("active");
 document.querySelector(".burger").classList.toggle("active");
@@ -25,3 +28,5 @@ document.querySelectorAll(".quantity").forEach(item => {
 
     })
 })
+
+console.log("delille-loaded")
