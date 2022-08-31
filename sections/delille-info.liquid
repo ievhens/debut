@@ -1,8 +1,9 @@
-<div class="delille-info-block">
-  {{ section.settings.visit_image | img_url: "500x500" | img_tag: "visit us", "info-img" }}
-  <h3>{{ section.settings.visit_title }}</h3>
-</div>
-<div class="delille-info-block">
+<div class="delille-info-container">
+  <div class="delille-info-block">
+    {{ section.settings.visit_image | img_url: "500x500" | img_tag: "visit us", "info-img" }}
+    <h3>{{ section.settings.visit_title }}</h3>
+  </div>
+  <div class="delille-info-block">
     {% form 'create_customer' %}
       <fieldset>
         <legend>{{ section.settings.form-title }}</legend>
@@ -12,12 +13,14 @@
         <input type="email" id="mail" name="mail" value="" placeholder="{{ section.settings.mail_placeholder }}" required>
       </fieldset>
     {% endform %}
-  <h3>{{ section.settings.subscribe_title }}</h3>
+    <h3>{{ section.settings.subscribe_title }}</h3>
+  </div>
+  <div class="delille-info-block">
+    {{ section.settings.shipping_image | img_url: "500x500" | img_tag: "shipping", "info-img" }}
+    <h3>{{ section.settings.shipping_title }}</h3>
+  </div>
 </div>
-<div class="delille-info-block">
-  {{ section.settings.shipping_image | img_url: "500x500" | img_tag: "shipping", "info-img" }}
-  <h3>{{ section.settings.shipping_title }}</h3>
-</div>
+
 
 
 

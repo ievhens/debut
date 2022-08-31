@@ -1,40 +1,38 @@
-<footer>
-    <div class="footer-container centered">
-        <nav class="footer-nav about-us">
-            <h4 class="nav-title">{{ section.settings.menu_title }}</h4>
-            <hr class="footer-hr">
-            <ul class="menu">
-                {% for link in linklists.delille-footer.links %}
-                    <li>{{ link.title | link_to: link.url }}</li>
-                {% endfor %}
-            </ul>
-        </nav>
-        <nav class="footer-nav contacts">
-            <h4 class="nav-title">{{ section.settings.contacts_title }}</h4>
-            <hr class="footer-hr">
-            <div class="mail">
-                <a href="mailto:{{- shop.email -}}?subject=From delillecellars.com">{{- shop.email -}}</a>
-            </div>
-            <div class="phone">
-                <a href="tel:{{- shop.phone -}}">{{- shop.phone -}}</a>
-            </div>
-        </nav>
-        <nav class="footer-nav social-media">
-            <h4 class="nav-title">{{ section.settings.social_title }}</h4>
-            <hr class="footer-hr">
-            <ul>
-                <li>
-                    <a href="#"><img src="{{ "logo_footer_facebook.png" | asset_url }}" alt="delillecellars facebook"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="{{ "logo_footer_twitter.png" | asset_url }}" alt="delillecellars twitter"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="{{ "logo_footer_pinterest.png" | asset_url }}" alt="delillecellars pinterest"></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<footer class="footer-container centered">
+    <nav class="footer-nav about-us">
+        <h4 class="nav-title">{{ section.settings.menu_title }}</h4>
+        <hr class="footer-hr">
+        <ul class="menu">
+            {% for link in linklists.delille-footer.links %}
+                <li>{{ link.title | link_to: link.url }}</li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <nav class="footer-nav contacts">
+        <h4 class="nav-title">{{ section.settings.contacts_title }}</h4>
+        <hr class="footer-hr">
+        <div class="mail">
+            <a href="mailto:{{- shop.email -}}?subject=From delillecellars.com">{{- shop.email -}}</a>
+        </div>
+        <div class="phone">
+            <a href="tel:{{- shop.phone -}}">{{- shop.phone -}}</a>
+        </div>
+    </nav>
+    <nav class="footer-nav social-media">
+        <h4 class="nav-title">{{ section.settings.social_title }}</h4>
+        <hr class="footer-hr">
+        <ul>
+            <li>
+                <a href="#"><img src="{{ "logo_footer_facebook.png" | asset_url }}" alt="delillecellars facebook"></a>
+            </li>
+            <li>
+                <a href="#"><img src="{{ "logo_footer_twitter.png" | asset_url }}" alt="delillecellars twitter"></a>
+            </li>
+            <li>
+                <a href="#"><img src="{{ "logo_footer_pinterest.png" | asset_url }}" alt="delillecellars pinterest"></a>
+            </li>
+        </ul>
+    </nav>
 </footer>
 
 {% schema %}

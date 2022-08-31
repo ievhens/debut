@@ -81,12 +81,12 @@
 <body class="template-{{ template | split: '.' | first }}">
 
   {% section 'delille-header' %}
-  <div class="page-container" id="PageContainer">
     <main>
       {{ content_for_layout }}
     </main>
-  </div>
   {% section 'delille-footer' %}
+
 </body>
+
 <script src="{{ "delille.js" | asset_url }}" ></script>
 </html>
