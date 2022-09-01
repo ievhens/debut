@@ -6033,7 +6033,7 @@ $toolbar-height-small: 46px;
   box-shadow: 0px 11px 24px 2px rgba(0, 1, 1, 0.45);
 }
 .top-margined{
-  margin-top: 250px;
+  margin-top: 50px;
 }
 
 /*================ delille Header ================*/
@@ -6252,7 +6252,9 @@ header .logo{
   margin-top: 12px;
 }
 .card-btn{
+  display: block;
   margin-top: -10px;
+  float: right;
 }
 
 /*================ delille Footer ================*/
@@ -6405,55 +6407,22 @@ header .logo{
 
   .delille-featured-collection-item{
     padding: 5px;
-    width: 370px;
+    width: 350px;
+    margin: 10px auto;
   }
-  .delille-product-card__title{
-    font-size: 18px;
+  .delille-featured-collection-item:nth-child(odd),
+  .delille-featured-collection-item:nth-child(even){
+    float: none;
   }
   .delille-product-card__description{
-    font: 12px/18px "Neutra Text";
+    font-size: 12px;
     margin: 5px auto 10px;
-    padding: 0 10px;
   }
-  .delille-product-card__buy-info{
-    width: fit-content;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  .delille-product-card__buy-info__item form{
-    font-family: "Neutra Text";
-    text-transform: uppercase;
-    margin: 0 1.9em;
-  }
-  .delille-product-card__buy-info__item form [type="number"]{
-    width: 40px;
-    height: 30px;
-    padding: 0 0 0 15px;
-    margin: 0 0 20px 10px;
-    border: none;
-    box-shadow: inset 1px 2px 5px 0px rgba(0, 1, 1, 0.2);
-  }
-  .delille-product-card__buy-info__item form [type=number]::-webkit-inner-spin-button,
-  .delille-product-card__buy-info__item form [type=number]::-webkit-outer-spin-button {
-    opacity: 1;
-  }
-  .delille-product-card__buy-info__item label{
-    display: inline;
-  }
-  .delille-product-card__buy-info__item .quantity{
-    display: none;
-  }
-  .delille-product-card__buy-info__item form [type="submit"]{
-    padding: 0;
-    text-transform: uppercase;
-    border: none;
-    color: white;
-    background-color: rgb(45, 45, 45);
-    margin-top: 12px;
-  }
-  .card-btn{
-    margin-top: -10px;
-  }
+  .delille-product-card__buy-info__item form{margin: 0 1.2em;}
+  .delille-product-card__buy-info__item form [type="number"]{margin: 0 10px 20px 10px;}
+  .delille-product-card__buy-info__item label{display: none;}
+  .delille-product-card__buy-info__item .quantity{display: inline-block;}
+  .card-btn{margin-top: -5px;}
 
 
 }
@@ -6463,6 +6432,14 @@ header .logo{
     background-position: center;
     background-size: 100%;
   }
+  /*================ delille Featured Collection ================*/
+
+  .delille-product-card__buy-info{padding: 0 10px;}
+  .delille-featured-collection-item{width: 310px;}
+  .delille-product-card__buy-info__item table{font-size: 14px}
+  .delille-product-card__buy-info__item form{margin: 0 9px;}
+  .delille-product-card__buy-info__item form [type="number"]{margin: 0 10px 10px 10px;}
+
 
   /* delille Collections Section */
   .delille-collection-list__title{font-size: 32px;}
