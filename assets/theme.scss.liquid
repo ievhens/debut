@@ -6052,14 +6052,12 @@ header .logo{
   float: right;
   margin: 0;
 }
-.main-nav li{
+#main-nav li{
   float: left;
   list-style-type: none;
   text-transform: uppercase;
 }
 .dellile-header-container{}
-.burger{}
-.main-nav{}
 .delille-authorize{}
 .authorize-item{
   margin-left: 4px;
@@ -6070,6 +6068,8 @@ header .logo{
   margin-left: 18px;
   margin-top: 16px;
 }
+
+
 /*================ delille Slider ================*/
 
 .slider{
@@ -6326,6 +6326,15 @@ header .logo{
 
   .centered{width: 900px;}
 
+  header .logo{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+  header nav{display: table; width: 100%;}
+  header .delille-menu{ float: left; }
+
   /* delille Info Section */
 
   .delille-info{padding-top: 30px;}
@@ -6336,6 +6345,10 @@ header .logo{
 
   .delille-collection-list__title{font-size: 58px;}
   .delille-collection-list-item:nth-child(2){margin: 0 9px;}
+
+  /*================ delille Footer ================*/
+
+  .footer-nav{width: 190px;}
 
 
 }
@@ -6360,36 +6373,75 @@ header .logo{
 
   /*================ delille Featured Collection ================*/
 
-  .delille-featured-collection-item{
-    padding: 10px;
-    width: 350px;
-  }
-  .delille-product-card__title{
-    font-size: 18px;
-  }
+  .delille-featured-collection-item{padding: 10px;width: 350px;}
+  .delille-product-card__title{font-size: 18px;}
   .delille-product-card__description{
     font: 14px/18px "Neutra Text";
     margin: 5px auto 10px;
     padding: 0 10px;
   }
-  .delille-product-card__buy-info{
-    padding: 0 10px;
-  }
-  .delille-product-card__buy-info__item form{
-    font-family: "Neutra Text";
-    text-transform: uppercase;
-    margin: 0 .8em;
-  }
-  .delille-product-card__buy-info__item .quantity{
-    display: none;
-  }
-  .card-btn{
-    width: 90%;
-    margin-top: -10px;
-  }
+  .delille-product-card__buy-info{padding: 0 10px;}
+  .delille-product-card__buy-info__item form{margin: 0 .8em;}
+  .footer-nav{width: 80%; float: none; margin: 0 auto 40px auto;}
+
 }
 
 @media (max-width: 768px){
+
+  header.white-transparent{position: fixed; background-color: rgba(255, 255, 255, 1);}
+  header .logo{width: 250px; float: left; margin: 1px 0 4px 0;}
+
+  .burger{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    float: right;
+    margin-top: 15px;
+  }
+  .burger:before,
+  .burger:after, .burger span{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(75, 75, 75);
+    transition: all .5s ease-in-out;
+  }
+  .burger:before{
+    top:0
+  }
+  .burger:after{
+    bottom: 0;
+  }
+  .burger span{
+    top: 9px;
+  }
+  header nav{
+    position: absolute;
+    top: 44px;
+    left: -250px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 11px 24px 2px rgba(0, 1, 1, 0.45);
+    transition: all 0.5s ease-in-out;
+  }
+  nav.active{left: 0;}
+  .burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .active span{transform: scale(0);}
+
+  .delille-authorize, .delille-menu, #main-nav li{float: none;}
+
+  .delille-authorize li{margin: 15px;}
+  .delille-menu li{margin: 15px;}
+  .delille-authorize{border-bottom: 1px solid rgb(75, 75, 75)}
+  .delille-authorize li:nth-child(2){display: none;}
 
   /* delille Info Section */
 

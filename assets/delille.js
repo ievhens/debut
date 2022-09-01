@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
 document.querySelector(".burger").onclick = function() {
-document.getElementById("mobile-menu").classList.toggle("active");
+document.getElementById("main-nav").classList.toggle("active");
 document.querySelector(".burger").classList.toggle("active");
     
 }
