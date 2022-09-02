@@ -95,7 +95,7 @@
           "login_text": "login",
           "cart_text": "cart",
           "logo": "shopify:\/\/shop_images\/logo_header_delille.png",
-          "main_linklist": "main-menu",
+          "main_linklist": "delille-menu",
           "home_page_only": true
         }
       },
