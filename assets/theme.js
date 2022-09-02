@@ -2996,3 +2996,5 @@ theme.init = function() {
 };
 
 $(theme.init);
+
+console.log("theme.js loaded")
