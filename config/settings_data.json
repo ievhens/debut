@@ -109,29 +109,6 @@
           "social_title": "Keep up with us Online"
         }
       },
-      "166187238693077106": {
-        "type": "delille-slider",
-        "blocks": {
-          "166187238693077106-0": {
-            "type": "image_picker",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/slide1_97c35a36-3302-43f1-9ab5-e112cb6bb2df.jpg"
-            }
-          },
-          "166187238693077106-1": {
-            "type": "image_picker",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/slide2.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "166187238693077106-0",
-          "166187238693077106-1"
-        ],
-        "settings": {
-        }
-      },
       "16618724107186737d": {
         "type": "delille-info",
         "settings": {
@@ -185,10 +162,33 @@
           "show_vendor": false,
           "show_view_all": false
         }
+      },
+      "1662128401c297703e": {
+        "type": "delille-slider",
+        "blocks": {
+          "1662128401c297703e-0": {
+            "type": "image_picker",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide1_97c35a36-3302-43f1-9ab5-e112cb6bb2df.jpg"
+            }
+          },
+          "1662128401c297703e-1": {
+            "type": "image_picker",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1662128401c297703e-0",
+          "1662128401c297703e-1"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
-      "166187238693077106",
+      "1662128401c297703e",
       "16618724107186737d",
       "16618724945685e956",
       "1661872446c7d726cd"
