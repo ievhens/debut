@@ -24,9 +24,9 @@
             {% form 'product', product %}
                 <label for="quantity">qty</label>
                 <div class="quantity less">–</div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="100">
+                <input type="number" id="quantity" name="qty" value="1" min="1" max="100">
                 <div class="quantity more">+</div><br>
-          <input type="hidden" value="{{ product.variants[0].id }}">
+                <input type="hidden" name="id" value="{{ product.variants[0].id }}">
                 <input type="submit" value="buy now">
             {% endform %}
         </div>
