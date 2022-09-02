@@ -131,23 +131,23 @@
               "collection": "dellile-collection"
             }
           },
-          "1661872446c7d726cd-1": {
-            "type": "featured_collection",
-            "settings": {
-              "collection": "doyenne-collection"
-            }
-          },
           "1661872446c7d726cd-2": {
             "type": "featured_collection",
             "settings": {
               "collection": "grand-ciel-collection"
             }
+          },
+          "1661872446c7d726cd-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "doyenne-collection"
+            }
           }
         },
         "block_order": [
           "1661872446c7d726cd-0",
-          "1661872446c7d726cd-1",
-          "1661872446c7d726cd-2"
+          "1661872446c7d726cd-2",
+          "1661872446c7d726cd-1"
         ],
         "settings": {
           "title": "discover the collection",
