@@ -6018,12 +6018,19 @@ $toolbar-height-small: 46px;
   z-index: 2;
 }
 
+
+
 /*=====================================================*/
 /*================   De Lille Cellars  ================*/
 /*=====================================================*/
 
-.centered{
+
+body.delille{
   font-family: "High Tower Text";
+  font-size: 14px;
+  line-height: 1.25;
+}
+.centered{
   width: 960px;
   margin: 0 auto;
   display: table;
@@ -6052,6 +6059,9 @@ header .logo{
   float: right;
   margin: 0;
 }
+#main-nav{
+  display: table;
+}
 #main-nav li{
   float: left;
   list-style-type: none;
@@ -6076,36 +6086,6 @@ header .logo{
   position: relative;
   width: 1200px;
   min-height: 80px;
-}
-
-/*================ delille Collections Section ================*/
-
-.delille-collection-list{
-  padding: 0 0 35px 0;
-}
-.delille-collection-list__title{
-  text-align: center;
-  font-size: 60px;
-  font-weight: 200;
-  text-transform: uppercase;
-  line-height: 80px;
-  letter-spacing: 0;
-  margin: 0;
-}
-.delille-collection-list__container{
-  display: table;
-  width: fit-content;
-  margin: 0 auto;
-}
-.delille-collection-list-item{
-  float: left;
-}
-.delille-collection-list-item:nth-child(2){
-  margin: 0 36px;
-}
-.collection-list-image{
-  display: block;
-  width: 270px;
 }
 
 /*================ delille Info Section ================*/
@@ -6183,14 +6163,14 @@ header .logo{
 }
 .delille-featured-collection-item{
   padding: 20px;
-  width: 430px;
+  width: 470px;
   color: white;
 }
 .delille-featured-collection-item:nth-child(odd){
   float: left;
 }
 .delille-featured-collection-item:nth-child(even){
- float: right;
+  float: right;
 }
 .delille-product-card__title{
   text-align: center;
@@ -6207,6 +6187,7 @@ header .logo{
   color: white;
 }
 .delille-product-card__buy-info{
+  font-size: 18px;
   display: table;
   width: fit-content;
   margin: 0 auto;
@@ -6223,13 +6204,13 @@ header .logo{
 .delille-product-card__buy-info__item form{
   font-family: "Neutra Text";
   text-transform: uppercase;
-  margin: 0 1.9em;
+  margin: 0 1.8em;
 }
 .delille-product-card__buy-info__item form [type="number"]{
-  width: 40px;
+  width: 60px;
   height: 30px;
   padding: 0 0 0 15px;
-  margin: 0 0 20px 10px;
+  margin: 0 0 26px 10px;
   border: none;
   box-shadow: inset 1px 2px 5px 0px rgba(0, 1, 1, 0.2);
 }
@@ -6249,12 +6230,42 @@ header .logo{
   border: none;
   color: white;
   background-color: rgb(45, 45, 45);
-  margin-top: 12px;
 }
 .card-btn{
   display: block;
-  margin-top: -10px;
+  width: 90px;
+  margin-top: -5px;
   float: right;
+}
+
+/*================ delille Collections Section ================*/
+
+.delille-collection-list{
+  padding: 0 0 35px 0;
+}
+.delille-collection-list__title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 80px;
+  letter-spacing: 0;
+  margin: 0;
+}
+.delille-collection-list__container{
+  display: table;
+  width: fit-content;
+  margin: 0 auto;
+}
+.delille-collection-list-item{
+  float: left;
+}
+.delille-collection-list-item:nth-child(2){
+  margin: 0 36px;
+}
+.collection-list-image{
+  display: block;
+  width: 270px;
 }
 
 /*================ delille Footer ================*/
@@ -6326,6 +6337,7 @@ header .logo{
 
   .centered{width: 900px;}
 
+  /* header */
   header .logo{
     float: none;
     display: block;
@@ -6336,45 +6348,41 @@ header .logo{
   header .delille-menu{ float: left; }
   #main-nav li{margin: 10px;}
 
-  /* delille Info Section */
 
+  /* info */
   .delille-info{padding-top: 30px;}
   .delille-info-block{width: 300px;}
   .delille-info h3{margin: 10px auto 30px; font-size: 32px;}
 
-  /* delille Collections Section */
 
+  /* featured */
+  .delille-featured-collection-item{width: 440px;}
+  .delille-product-card__buy-info__item form{margin: 0 1.3em;}
+
+
+  /* collections */
   .delille-collection-list__title{font-size: 58px;}
   .delille-collection-list-item:nth-child(2){margin: 0 9px;}
 
-  /*================ delille Footer ================*/
 
+  /*footer*/
   .footer-nav{width: 190px;}
-
-
 }
 @media (max-width: 960px){
 
   .centered{width: 95%;}
   .top-margined{margin-top: 20px;}
 
-  /* delille Info Section */
 
+  /* info */
   .delille-info{padding-top: 30px;}
   .delille-info-block{width: 222px; margin: 0 10px;}
   .delille-info form{width: 100%; padding-bottom: 9px;}
   .delille-info h3{margin: 10px auto 30px; font-size: 30px;}
 
-  /* delille Collections Section */
 
-  .delille-collection-list{padding-bottom: 15px;}
-  .delille-collection-list__title{font-size: 45px;}
-  .delille-collection-list-item:nth-child(2){margin: 0 30px;}
-  .collection-list-image{width: 200px;}
-
-  /*================ delille Featured Collection ================*/
-
-  .delille-featured-collection-item{padding: 10px;width: 350px;}
+  /* featured */
+  .delille-featured-collection-item{padding: 10px;width: 365px;}
   .delille-product-card__title{font-size: 18px;}
   .delille-product-card__description{
     font: 14px/18px "Neutra Text";
@@ -6382,13 +6390,25 @@ header .logo{
     padding: 0 10px;
   }
   .delille-product-card__buy-info{padding: 0 10px;}
-  .delille-product-card__buy-info__item form{margin: 0 .8em;}
+  .delille-product-card__buy-info__item form{margin: 0 .6em;}
+
+
+  /* collections */
+  .delille-collection-list{padding-bottom: 15px;}
+  .delille-collection-list__title{font-size: 45px;}
+  .delille-collection-list-item:nth-child(2){margin: 0 30px;}
+  .collection-list-image{width: 200px;}
+
+
+  /* footer */
   .footer-nav{width: 80%; float: none; margin: 0 auto 40px auto;}
+  .footer-nav .menu li{display: inline-block; margin-right: 12px; font-size: 18px;}
 
 }
 
 @media (max-width: 768px){
 
+  /* header */
   header.white-transparent{position: fixed; background-color: rgba(255, 255, 255, 1);}
   header .logo{width: 250px; float: left; margin: 1px 0 4px 0;}
 
@@ -6444,19 +6464,15 @@ header .logo{
   .delille-authorize{border-bottom: 1px solid rgb(75, 75, 75)}
   .delille-authorize li:nth-child(2){display: none;}
 
-  /* delille Info Section */
 
+
+  /* info */
   .delille-info{padding-top: 30px;}
   .delille-info-block{width: 240px; float: none; margin: 0 auto;}
   .delille-info h3{margin: 10px auto 30px; font-size: 28px;}
 
-  /* delille Collections Section */
-  .delille-collection-list{padding-bottom: 10px;}
-  .delille-collection-list__title{font-size: 28px; line-height: 40px;}
-  .delille-collection-list-item:nth-child(2){margin: 0 22px;}
-  .collection-list-image{width: 130px;}
 
-  /*================ delille Featured Collection ================*/
+  /* featured*/
 
   .delille-featured-collection-item{
     padding: 5px;
@@ -6464,20 +6480,21 @@ header .logo{
     margin: 10px auto;
   }
   .delille-featured-collection-item:nth-child(odd),
-  .delille-featured-collection-item:nth-child(even){
-    float: none;
-  }
-  .delille-product-card__description{
-    font-size: 12px;
-    margin: 5px auto 10px;
-  }
-  .delille-product-card__buy-info__item form{margin: 0 1.2em;}
-  .delille-product-card__buy-info__item form [type="number"]{margin: 0 10px 20px 10px;}
+  .delille-featured-collection-item:nth-child(even){float: none;}
+  .delille-product-card__description{font-size: 12px;margin: 5px auto 10px;}
+  .delille-product-card__buy-info__item form{margin: 0 0.6em;}
+  .delille-product-card__buy-info__item form [type="number"]{margin: 0 10px 28px 10px; padding: 0; text-align: center}
+  .delille-product-card__buy-info__item form [type="submit"]{display: block; width: fit-content; margin: 0 auto;}
   .delille-product-card__buy-info__item label{display: none;}
   .delille-product-card__buy-info__item .quantity{display: inline-block;}
   .card-btn{margin-top: -5px;}
 
 
+  /* collections */
+  .delille-collection-list{padding-bottom: 10px;}
+  .delille-collection-list__title{font-size: 28px; line-height: 40px;}
+  .delille-collection-list-item:nth-child(2){margin: 0 22px;}
+  .collection-list-image{width: 130px;}
 }
 
 @media (max-width: 480px){
@@ -6485,18 +6502,18 @@ header .logo{
     background-position: center;
     background-size: 100%;
   }
-  /*================ delille Featured Collection ================*/
 
-  .delille-product-card__buy-info{padding: 0 10px;}
-  .delille-featured-collection-item{width: 310px;}
-  .delille-product-card__buy-info__item table{font-size: 14px}
-  .delille-product-card__buy-info__item form{margin: 0 9px;}
-  .delille-product-card__buy-info__item form [type="number"]{margin: 0 10px 10px 10px;}
-
-
-  /* delille Collections Section */
+  /* collections */
   .delille-collection-list__title{font-size: 32px;}
   .delille-collection-list-item{float: none;}
   .delille-collection-list-item:nth-child(2){margin: 10px 0;}
   .collection-list-image{width: 200px;}
+
+  /* featured */
+  .delille-featured-collection-item{width: 310px;}
+  .delille-product-card__buy-info{padding: 0 10px;}
+  .delille-product-card__buy-info__item table{font-size: 14px}
+  .delille-product-card__buy-info__item form{margin: 0 24px;}
+  .delille-product-card__buy-info__item form [type="number"]{width: 35px; margin: 0 10px 16px 10px;}
+  .card-btn{width: 70px; margin-top: -4px;}
 }

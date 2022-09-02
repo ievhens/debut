@@ -1,6 +1,6 @@
 <div class="delille-info-container">
   <div class="delille-info-block">
-    {{ section.settings.visit_image | img_url: "500x500" | img_tag: "visit us", "info-img" }}
+    <a href="#">{{ section.settings.visit_image | img_url: "500x500" | img_tag: "visit us", "info-img" }}</a>
     <h3>{{ section.settings.visit_title }}</h3>
   </div>
   <div class="delille-info-block">
@@ -16,7 +16,7 @@
     <h3>{{ section.settings.subscribe_title }}</h3>
   </div>
   <div class="delille-info-block">
-    {{ section.settings.shipping_image | img_url: "500x500" | img_tag: "shipping", "info-img" }}
+    <a href="#">{{ section.settings.shipping_image | img_url: "500x500" | img_tag: "shipping", "info-img" }}</a>
     <h3>{{ section.settings.shipping_title }}</h3>
   </div>
 </div>
