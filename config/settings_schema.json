@@ -856,20 +856,6 @@
       },
       {
         "type": "text",
-        "id": "social_twitter_link",
-        "label": {
-          "en": "Twitter",
-          "de": "Twitter",
-          "fr": "Twitter"
-        },
-        "info": {
-          "en": "https://twitter.com/shopify",
-          "de": "https://twitter.com/shopify",
-          "fr": "https://twitter.com/shopify"
-        }
-      },
-      {
-        "type": "text",
         "id": "social_instagram_link",
         "label": {
           "en": "Instagram",
