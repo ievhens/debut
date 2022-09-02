@@ -1,6 +1,7 @@
-<header class="white-transparent">
+{% assign homepage_url =  shop.url | append: "/" %}
+<header class="white-transparent {% if canonical_url == homepage_url %} absolute {% endif %}">
     <div class="dellile-header-container centered">
-        <a href="{{ shop.domain }}">{{ section.settings.logo | img_url: "500x500" | img_tag: shop.name, "logo"  }}</a>
+        <a href="/">{{ section.settings.logo | img_url: "500x500" | img_tag: shop.name, "logo"  }}</a>
         <div class="burger">
             <span></span>
         </div>
