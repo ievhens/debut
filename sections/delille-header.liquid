@@ -1,4 +1,7 @@
 {% assign homepage_url =  shop.url | append: "/" %}
+{% if template == 'index' %}
+  King Arthur
+  {% endif %}
 <header class="white-transparent {% if canonical_url == homepage_url %} absolute {% endif %}">
     <div class="dellile-header-container centered">
         <a href="/">{{ section.settings.logo | img_url: "500x500" | img_tag: shop.name, "logo"  }}</a>
