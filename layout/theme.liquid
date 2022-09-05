@@ -34,6 +34,7 @@
   {% include 'social-meta-tags' %}
 
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'jquery-ui.min.css' | asset_url | stylesheet_tag }}
   {% include 'google-fonts' %}
 
   <script>
@@ -72,6 +73,7 @@
   <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
 
   {{ "jquery-3_6_0-min.js" | asset_url | script_tag }}
+  {{ "jquery-ui-min.js" | asset_url | script_tag }}
   {{ "jquery-simple-fading-slider.js" | asset_url | script_tag }}
 
   {{ content_for_header }}
