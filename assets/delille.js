@@ -13,7 +13,7 @@ $(document).ready(function(){
         if($.inArray(`${month + 1}-${day}-${year}`, holydays) != -1 || new Date() > date || weekday == 1 ){return [false]};
         return [true];
     }
-    $('[name="delivery-date"]').datepicker({
+    $("#delivery-date").datepicker({
         beforeShowDay: lockHolidays
     })
 });
