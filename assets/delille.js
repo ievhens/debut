@@ -6,14 +6,6 @@ $(document).ready(function(){
         "fadeSpeed": 3000,
         "hoverStop": true});
 
-    // let holidays = "{{ holidays }}".split(", ");
-
-
-    let holidays = user_holidays.split(", ");
-    let weekdays = user_freedays.split(", ").map(str => {
-        return Number(str);
-    });
-
     function lockHolidays(date) {
         let month = date.getMonth(), day = date.getDate(), year = date.getFullYear(), weekday = date.getDay();
         if($.inArray(`${day}-${month + 1}-${year}`, holidays) != -1 || new Date() > date || weekdays.includes(weekday) ){return [false]};

@@ -156,8 +156,8 @@
 <script>
   {% assign holidays = section.settings.holidays %}
   {% assign freedays = section.settings.freedays %}
-  let user_holidays = "{{ holidays }}";
-  let user_freedays = "{{ freedays }}";
+  let holidays = "{{ holidays }}".split(", ");
+  let weekdays = "{{ freedays }}".split(", ").map(str => {return Number(str);});
 </script>
 
 {% schema %}
