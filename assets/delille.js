@@ -16,7 +16,7 @@ $(document).ready(function(){
     $("#delivery-date").datepicker({
         beforeShowDay: lockHolidays
     })
-    $('[name="delivery-time"]').timepicker({
+    $("#delivery-time").timepicker({
         timeFormat: 'HH:mm',
         interval: 30,
         minTime: '10',
