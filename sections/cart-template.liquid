@@ -131,8 +131,8 @@
               </div>
             {% endif %}
             <div class="cart__shipping">{{ 'cart.general.shipping_at_checkout' | t }}</div>
-            <input type="text" id="delivery-date" name="attributes[delivery-date]" value="{{ cart.attributes.delivery-date }}" />
-            <input type="text" id="delivery-time" name="attributes[delivery-time]" value="{{ cart.attributes.delivery-time }}" />
+            <input type="text" id="delivery-date" class="delivery-picker date" name="attributes[delivery-date]" value="{{ cart.attributes.delivery-date }}" placeholder="select date"/>
+            <input type="text" id="delivery-time" class="delivery-picker time"name="attributes[delivery-time]" value="{{ cart.attributes.delivery-time }}" placeholder="select time"/>
             <a href="collections/all" class="btn btn--secondary cart__update cart__continue--large small--hide" >{{ 'cart.general.continue_shopping' | t }}</a>
             <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
             <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">

@@ -21,7 +21,7 @@ $(document).ready(function(){
         interval: 30,
         minTime: '10',
         maxTime: '11:00pm',
-        defaultTime: '10',
+        defaultTime: 'select time',
         startTime: '10:00',
         dynamic: true,
         dropdown: true,
