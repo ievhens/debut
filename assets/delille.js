@@ -6,11 +6,17 @@ $(document).ready(function(){
         "fadeSpeed": 3000,
         "hoverStop": true});
 
-    let holydays = ["9-20-2022", "9-28-2022"];
+    // let holidays = "{{ holidays }}".split(", ");
+
+
+    let holidays = user_holidays.split(", ");
+    let weekdays = user_freedays.split(", ").map(str => {
+        return Number(str);
+    });
 
     function lockHolidays(date) {
         let month = date.getMonth(), day = date.getDate(), year = date.getFullYear(), weekday = date.getDay();
-        if($.inArray(`${month + 1}-${day}-${year}`, holydays) != -1 || new Date() > date || weekday == 1 ){return [false]};
+        if($.inArray(`${day}-${month + 1}-${year}`, holidays) != -1 || new Date() > date || weekdays.includes(weekday) ){return [false]};
         return [true];
     }
     $("#delivery-date").datepicker({

@@ -1,5 +1,4 @@
 <div class="page-width" data-section-id="{{ section.id }}" data-section-type="cart-template">
-
   {% if cart.item_count > 0 %}
     <div class="section-header text-center">
       <h1>{{ 'cart.general.title' | t }}</h1>
@@ -154,7 +153,12 @@
     </div>
   {% endif %}
 </div>
-
+<script>
+  {% assign holidays = section.settings.holidays %}
+  {% assign freedays = section.settings.freedays %}
+  let user_holidays = "{{ holidays }}";
+  let user_freedays = "{{ freedays }}";
+</script>
 
 {% schema %}
   {
@@ -173,6 +177,20 @@
           "fr": "Activer les notes de panier"
         },
         "default": false
+      },
+      {
+        "type": "text",
+        "id": "holidays",
+        "label": "Custom delivery not working days",
+        "default": "14-9-2022, 22-9-2022",
+        "info": "\"14-9-2022, 22-9-2022\""
+      },
+      {
+        "type": "text",
+        "id": "freedays",
+        "label": "Weekly delivery not working days",
+        "default": "1, 2",
+        "info": "Example: \"0, 1, 2\" (0 for Sun, 6 for Sat )"
       }
     ]
   }
